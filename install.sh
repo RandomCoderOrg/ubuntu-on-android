@@ -3,9 +3,9 @@
 ####################################
 # A Script to implant hippo inside 
 # proot-distro(for now!)
-# DISTRO_PLUGINS_DIR @TERMUX_PREFIX@/etc/proot-distro"
+#
 
-DISTRO_PLUGINS_DIR="/data/data/com.termux/file/usr/etc/proot-distro"
+DISTRO_PLUGINS_DIR="/data/data/com.termux/files/usr/etc/proot-distro"
 
 function _implant_()
 {
