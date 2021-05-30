@@ -27,8 +27,8 @@ get_download_url() {
 
 	case "$DISTRO_ARCH" in
 		aarch64)
-			rootfs="https://github.com/SaicharanKandukuri/ubuntu-on-android/releases/download/v0.1-arm64/ubuntu-21.04-test-base-arm64-root-one.tar.gz"
-			sha256="a35d4fb115da45f866d0b41544f99587eba979dad584bf9c9982f6242cc002ed"
+			rootfs="https://github.com/SaicharanKandukuri/ubuntu-on-android/releases/download/v1-xfce4/ubuntu-21.04-xfce4-rootfs-testing-arm64.tar.gz"
+			sha256="89550a76ee14da85d6d521bc899d67f0b6cab3022ee4e166bb8d420414068a61"
 			;;
 	esac
 
