@@ -34,8 +34,19 @@ exit
 ```
 ### Deafault passwords
 `user` -> ubuntu
+
+
+
 user password -> `ubuntu`
+
+
 you can change by command `passwd`
+
+
 vnc password -> `ubuntu`
+
+
 you can change it by command `vncpasswd`
+
+
 ## More updates comming soon👊.
