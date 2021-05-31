@@ -1,5 +1,5 @@
 # ubuntu-on-android
-A twaked ubuntu-21.04 with xfce4 runs on android with termux/proot-distro
+A tweaked ubuntu-21.04 with xfce4 runs on android with termux/proot-distro
 
 ![stage](https://img.shields.io/badge/Status-Testing-orange)
 
