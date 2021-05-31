@@ -1,6 +1,8 @@
 # ubuntu-on-android
 A twaked ubuntu-21.04 with xfce4 runs on android with termux/proot-distro
-- stage -> `testing`
+
+![stage](https://img.shields.io/badge/Status-Testing-orange)
+
 its called `hippo`
 
 # installation
@@ -32,7 +34,7 @@ vncserver --kill :1
 ```bash
 exit
 ```
-### Deafault passwords
+### Default passwords
 `user` -> ubuntu
 
 
