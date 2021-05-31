@@ -27,7 +27,7 @@ fi
 
 if _implant_; then
     echo -e "Implant done......."
-    echo -e "- Now you can install ubuntu by running \e[1;32mproot-distro install\e[0m"
+    echo -e "- Now you can install ubuntu by running \e[1;32mproot-distro install hippo \e[0m"
 else # this wont happen (mostly)
     echo ":( \e[32m error...\e[0m Please create a issue at \e[1;32mhttps://github.com/SaicharanKandukuri/ubuntu-on-android/issues\e[0m to resolve "
 fi
