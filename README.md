@@ -21,12 +21,12 @@ git clone https://github.com/RandomCoderOrg/ubuntu-on-android
 cd ubuntu-on-android
 bash install.sh
 # install
-proot-distro install hippo --user  ubuntu
+proot-distro install hippo
 ```
 ## logging into hippo
 ```bash
 # run
-proot-distro login hippo
+proot-distro login hippo --user ubuntu
 ```
 ## starting vncserver
 ```bash
