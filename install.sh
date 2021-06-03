@@ -39,8 +39,6 @@ if ! command -v pulseaudio; then
 fi
 
 ########################
-if _implant_; then
-    return 0
-else # this wont happen (mostly)
+if ! _implant_; then # this wont happen (mostly)
     echo ":( \e[32m error...\e[0m Please create a issue at \e[1;32mhttps://github.com/SaicharanKandukuri/ubuntu-on-android/issues\e[0m to resolve "
 fi
