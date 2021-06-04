@@ -36,6 +36,7 @@ if ! command -v proot-distro; then
 fi
 if ! command -v pulseaudio; then
     apt install pulseaudio -y
+    pulseaudio --start --load="module-native-protocol-tcp auth-ip-acl=127.0.0.1 auth-anonymous=1" --exit-idle-time=-1
 fi
 
 ########################
