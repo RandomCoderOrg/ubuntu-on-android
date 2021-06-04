@@ -58,3 +58,4 @@ you can change it by command `vncpasswd`
 
 A small help from me if you want to build your own rootfs [wiki_page](https://github.com/RandomCoderOrg/ubuntu-on-android/wiki/commands-took-to-make-a-custom-rootfs)
 ## More updates comming soon👊.
+- Update to stable in 1 day
