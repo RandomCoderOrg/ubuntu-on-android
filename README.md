@@ -12,7 +12,7 @@ its called `hippo`
 - If you have any issues or suggestions make sure i know at https://github.com/RandomCoderOrg/ubuntu-on-android/issue (create an issue)
 
 # installation
-- first install termux from termux.com
+- first install termux from [termux.com](https://termux.com)
 ```bash
 # install dependencies
 apt update; apt upgrade -y ; apt install -y pulseaudio proot-distro git -y
