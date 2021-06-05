@@ -1,7 +1,7 @@
 # ubuntu-on-android
 A tweaked ubuntu-21.04 with xfce4 runs on android with termux/proot-distro
 
-![stage](https://img.shields.io/badge/Status-Testing-orange)
+![stage](https://img.shields.io/badge/Status-Installable-green)
 
 its called `hippo`
 
