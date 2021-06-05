@@ -6,7 +6,6 @@ A tweaked ubuntu-21.04 with xfce4 runs on android with termux/proot-distro
 its called `hippo`
 
 ### A note before you try
-- This is a more like a stock xfce4 with some tweaks.
 - As lot of it is preinstalled you can login and start right after you install 
 - And its in early stages of building so things may look kind of bad (make sure to notice me if you find any in issues)
 - If you have any issues or suggestions make sure i know at https://github.com/RandomCoderOrg/ubuntu-on-android/issue (create an issue)
