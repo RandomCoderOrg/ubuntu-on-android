@@ -1,3 +1,5 @@
+![Screenshot_20210605-115657_VNC Viewer](https://user-images.githubusercontent.com/68287637/120882449-b4729680-c5f5-11eb-8a47-c452aefcc882.jpg "A Screenshot of ubuntu xfce showing some pre-installed apps")
+
 # ubuntu-on-android
 A tweaked ubuntu-21.04 with xfce4 runs on android with termux/proot-distro
 
@@ -26,7 +28,7 @@ proot-distro install hippo
 ## logging into hippo
 ```bash
 # run
-proot-distro login hippo --user ubuntu
+proot-distro login hippo
 ```
 ## starting vncserver
 ```bash
@@ -41,14 +43,8 @@ vncserver --kill :1
 exit
 ```
 ### Default passwords
-`user` -> ubuntu
+`user` -> root
 
-
-
-user password -> `ubuntu`
-
-
-you can change by command `passwd`
 
 
 vnc password -> `ubuntu`
