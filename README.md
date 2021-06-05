@@ -58,7 +58,7 @@ exit
 ## 🔊  Audio 
 If you cant hear audio from vnc then use this command by openning a new session in termux
 ```bash
-pulseaudio --start --load-"module-native-protocol-tcp auuth-ip-acp=127.0.0.1 auth-anonymus=1" --exit-idle-time=1
+pulseaudio --start --load-"module-native-protocol-tcp auth-ip-acp=127.0.0.1 auth-anonymus=1" --exit-idle-time=1
 ```
 ## Default passwords
 `user` -> root
