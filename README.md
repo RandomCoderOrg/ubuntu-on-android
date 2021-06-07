@@ -81,3 +81,7 @@ DEV #0 -> [Saicharankandukuri](https://github.com/SaicharanKandukuri)
 
 ## More updates comming soon👊.
 - feel free to contribute to this repo :)
+## Working On
+- Katoolin
+- A script to manage `hippo` from termux session
+- vnc manager scripts
