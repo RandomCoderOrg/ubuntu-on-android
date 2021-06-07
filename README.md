@@ -11,7 +11,7 @@
 [![Support Server](https://img.shields.io/discord/851345998831157288.svg?label=Discord&logo=Discord&colorB=7289da&style=for-the-badge)](https://discord.gg/y432PhPYCS)
 
 
-# ubuntu-on-android
+<h1 align="Center">Ubuntu 21.04 On android</h1>
 A tweaked ubuntu-21.04 with xfce4 runs on android with termux/proot-distro
 
 > This means now you can install ubuntu like above screenshot right in your smartphone without destroying your phone with rooting
@@ -89,7 +89,8 @@ DEV #0 -> [Saicharankandukuri](https://github.com/SaicharanKandukuri)
 # Links to community
 - create an [issue](https://github.com/RandomCoderOrg/ubuntu-on-android/issues) if you want to make me create one!
 
-## More updates comming soon👊.
+<h2 align="center"> More Updates coming soon 💛<h2>
+
 - feel free to contribute to this repo :)
 ## Working On
 - Katoolin
