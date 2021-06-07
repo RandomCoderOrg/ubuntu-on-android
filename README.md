@@ -1,5 +1,6 @@
 ![Screenshot_20210605-115657_VNC Viewer](https://user-images.githubusercontent.com/68287637/120882449-b4729680-c5f5-11eb-8a47-c452aefcc882.jpg "A Screenshot of ubuntu xfce showing some pre-installed apps")
 ![stage](https://img.shields.io/badge/Status-Installable-green) ![badge2](https://img.shields.io/badge/App-Termux-green) ![badge3](https://img.shields.io/badge/Linux%20Distribution-UBUNTU-brightgreen) ![bagge4](https://img.shields.io/badge/Linux%20Distribution__version-21.04%20(hippo)-brightgreen)
+[![Support Server](https://img.shields.io/discord/851345998831157288.svg?label=Discord&logo=Discord&colorB=7289da&style=for-the-badge)](https://discord.gg/y432PhPYCS)
 
 # ubuntu-on-android
 A tweaked ubuntu-21.04 with xfce4 runs on android with termux/proot-distro
