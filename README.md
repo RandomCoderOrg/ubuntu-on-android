@@ -96,3 +96,5 @@ DEV #0 -> [Saicharankandukuri](https://github.com/SaicharanKandukuri)
 - Katoolin
 - A script to manage `hippo` from termux session
 - vnc manager scripts
+- libGL implementation (Testing locally)
+- Xserver Xsldl Docs and scripts
