@@ -1,6 +1,6 @@
 ---
 name: Help on doing things
-about: Describe this issue template's purpose here.
+about: If you have trouble do anything in termux or inside hippo
 title: ''
 labels: documentation, question
 assignees: ''
