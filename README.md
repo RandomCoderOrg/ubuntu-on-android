@@ -8,7 +8,7 @@
 </p>
 
 ![stage](https://img.shields.io/badge/Status-Installable-green) ![badge2](https://img.shields.io/badge/App-Termux-green) ![badge3](https://img.shields.io/badge/Linux%20Distribution-UBUNTU-brightgreen) ![bagge4](https://img.shields.io/badge/Linux%20Distribution__version-21.04%20(hippo)-brightgreen)
-[![Support Server](https://img.shields.io/discord/851345998831157288.svg?label=Discord&logo=Discord&colorB=7289da&style=for-the-badge)](https://discord.gg/y432PhPYCS)
+[![Support Server](https://img.shields.io/discord/851345998831157288.svg?label=Discord&logo=Discord&colorB=7289da&style=for-the-badge)](https://discord.gg/y432PhPYCS) [![Join the chat at https://gitter.im/ubuntu-on-android/community](https://badges.gitter.im/ubuntu-on-android/community.svg)](https://gitter.im/ubuntu-on-android/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 
 <h1 align="Center">Ubuntu 21.04 On android</h1>
