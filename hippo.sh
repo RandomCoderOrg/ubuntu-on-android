@@ -50,8 +50,8 @@ distro_setup() {
 	h_dir=root
 
 	curl -o gl4es.sh https://raw.githubusercontent.com/RandomCoderOrg/ubuntu-on-android/gl4es-patch/etc/scripts/gl4es/script.sh
+	cp ./root/.bashrc ./root/.bashrc1
 	run_proot_cmd echo "echo \"Setting up gl4es...\"" >> ${h_dir}/.bashrc
-    run_proot_cmd echo "cp ~/.bashrc .bashrc1" >> ${h_dir}/.bashrc
     run_proot_cmd echo "bash /gl4es.sh" >> ${h_dir}/.bashrc
     run_proot_cmd echo "rm -rf /gl4es.sh" >> ${h_dir}/.bashrc
 	run_proot_cmd echo "export LD_LIBRARY_PATH=/lib/gl4es" >> ${h_dir}/.bashrc1
