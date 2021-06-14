@@ -55,7 +55,7 @@ vncserver :1
 ```
 This step start GUI like screenshot above
 it requires an app to see, its up to yourchoice but here are some recommended apps
-- [RealVnc](https://play.google.com/store/apps/details?id=com.realvnc.viewer.android&hl=en_IN&gl=US) avalible in playstore
+- [RealVnc](https://play.google.com/store/apps/details?id=com.realvnc.viewer.android&hl=en_IN&gl=US)(recommended) avalible in playstore
 - [Nethunter KEX](https://store.nethunter.com/en/packages/com.offsec.nethunter.kex/) 
 ### stoping vncserver
 ```bash
