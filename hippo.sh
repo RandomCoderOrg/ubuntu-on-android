@@ -54,6 +54,6 @@ distro_setup() {
     run_proot_cmd echo "cp ~/.bashrc .bashrc1" >> ${h_dir}/.bashrc
     run_proot_cmd echo "bash /gl4es.sh" >> ${h_dir}/.bashrc
     run_proot_cmd echo "rm -rf /gl4es.sh" >> ${h_dir}/.bashrc
-    run_proot_cmd echo "export LD-LIBRARY-PATH=/lib/gl4es" >> ${h_dir}/.bashrc
-
+	run_proot_cmd echo "export LD-LIBRARY-PATH=/lib/gl4es" >> ${h_dir}/.bashrc1
+	run_proot_cmd echo "rm -rf ~/.bashrc; mv ~/.bashrc1 ~/.bashrc" >> ${h_dir}/.bashrc
 }
