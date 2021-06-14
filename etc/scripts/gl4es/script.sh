@@ -10,7 +10,7 @@ git clone https://github.com/RandomCoderOrg/gl4es-port ${h_dir}/gl4es-port
 
 cd ${h_dir}/gl4es-port
 
-apt update; apt install -y libx11-dev build-essential
+apt update; apt install -y libx11-dev build-essential cmake python3
 sleep 1s
 
 clear
