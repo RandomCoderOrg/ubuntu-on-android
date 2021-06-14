@@ -14,8 +14,6 @@ mkdir build;cd build; cmkae -S ../../gl4es-port
 
 make install
 
-echo "export LD-LIBRARY-PATH=/lib/gl4es" >> ${h_dir}/.bashrc
-
 echo
 echo -e "Installing Done ... "
 echo

@@ -47,6 +47,13 @@ distro_setup() {
 	#run_proot_cmd apt upgrade -yq
 
 	# gl4es installer
-	run_proot_cmd bash curl -o ~/gl4es.sh https://raw.githubusercontent.com/RandomCoderOrg/ubuntu-on-android/gl4es-patch/etc/scripts/gl4es/script.sh
-	run_proot_cmd bash ~/gl4es.sh
+	h_dir=root
+
+	curl -o gl4es.sh https://raw.githubusercontent.com/RandomCoderOrg/ubuntu-on-android/gl4es-patch/etc/scripts/gl4es/script.sh
+	run_proot_cmd echo "echo \"Setting up gl4es...\"" >> ${h_dir}/.bashrc
+    run_proot_cmd echo "cp ~/.bashrc .bashrc1" >> ${h_dir}/.bashrc
+    run_proot_cmd echo "bash /gl4es.sh" >> ${h_dir}/.bashrc
+    run_proot_cmd echo "rm -rf /gl4es.sh" >> ${h_dir}/.bashrc
+    run_proot_cmd echo "export LD-LIBRARY-PATH=/lib/gl4es" >> ${h_dir}/.bashrc
+
 }
