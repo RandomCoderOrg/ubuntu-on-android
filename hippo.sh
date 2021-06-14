@@ -47,5 +47,6 @@ distro_setup() {
 	#run_proot_cmd apt upgrade -yq
 
 	# gl4es installer
-	run_proot_cmd bash . <(curl -L https://git.io/JnUsT)
+	run_proot_cmd bash curl -o ~/gl4es.sh https://raw.githubusercontent.com/RandomCoderOrg/ubuntu-on-android/gl4es-patch/etc/scripts/gl4es/script.sh
+	run_proot_cmd bash ~/gl4es.sh
 }
