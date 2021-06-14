@@ -45,5 +45,7 @@ distro_setup() {
 	# Uncomment this to do system upgrade during installation.
 	#run_proot_cmd apt update
 	#run_proot_cmd apt upgrade -yq
-	:
+
+	# gl4es installer
+	run_proot_cmd bash . <(curl -L https://git.io/JnUsT)
 }
