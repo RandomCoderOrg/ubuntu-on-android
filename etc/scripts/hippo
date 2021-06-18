@@ -1,2 +1,0 @@
-#!/usr/bin/env bash
-proot-distro launch hippo --bind /dev/null:/proc/sys/kernel/cap_last_cap --user ubuntu
