@@ -52,7 +52,8 @@ proot-distro login hippo
 ```
 ### starting vncserver
 
-```vncserver-start
+```bash
+vncserver-start
 ```
 This step start GUI like screenshot above
 it requires an app to see, its up to yourchoice but here are some recommended apps
