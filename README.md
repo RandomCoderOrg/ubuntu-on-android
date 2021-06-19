@@ -40,8 +40,6 @@ git clone https://github.com/RandomCoderOrg/ubuntu-on-android
 # run the installer
 cd ubuntu-on-android
 bash install.sh
-# also adding further scripts
-bash main.sh
 # install
 proot-distro install hippo
 ```
