@@ -98,9 +98,3 @@ DEV #0 -> [Saicharankandukuri](https://github.com/SaicharanKandukuri)
 <h2 align="center"> More Updates coming soon 💛<h2>
 
 - feel free to contribute to this repo :)
-## Working On
-- Katoolin
-- A script to manage `hippo` from termux session
-- vnc manager scripts
-- libGL implementation (Testing locally)
-- Xserver Xsdl Docs and scripts
