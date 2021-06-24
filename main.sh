@@ -3,7 +3,7 @@
 ##
 
 ##Adding a vncserver command
-echo "vncserver -kill :* && tigervncserver -geometry 1280x720 -xstartup /usr/bin/starrxfce4 -listen tcp :1" > /data/data/com.termux/files/usr/varlib/proot-distro/installed-rootfs/hippo/usr/bin/vncserver-start;
+echo "vncserver -kill :* && rm -rf /tmp/.X*-lock && tigervncserver -geometry 1280x720 -xstartup /usr/bin/starrxfce4 -listen tcp :1" > /data/data/com.termux/files/usr/varlib/proot-distro/installed-rootfs/hippo/usr/bin/vncserver-start;
 # Making it executable
 chmod +x  /data/data/com.termux/files/usr/varlib/proot-distro/installed-rootfs/hippo/usr/bin/vncserver-start;
 
