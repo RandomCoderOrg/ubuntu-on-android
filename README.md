@@ -26,8 +26,8 @@ A tweaked ubuntu-21.04 with xfce4 runs on android with termux/proot-distro
 - And its in early stages of building so some things may look kind of bad or missing(make sure to notice me if you find any in issues)
 - If you have any issues or suggestions make sure i know at https://github.com/RandomCoderOrg/ubuntu-on-android/issue (create an issue)
 
-# installation
-- first install termux from [termux.com](https://termux.com) or playstore!
+# Installation
+- First install termux from [termux.com](https://termux.com) or [F-Droid!](https://f-droid.org/en/packages/com.termux/)
 
 ## Getting Sources and install scripts
 ```bash
@@ -43,7 +43,7 @@ bash install.sh
 # install
 proot-distro install hippo
 ```
-### logging into hippo
+### Logging into hippo
 ```bash
 # run
 proot-distro login hippo
@@ -51,7 +51,7 @@ proot-distro login hippo
 ### starting vncserver
 
 ```bash
-vncserver :1
+vncserver-start
 ```
 This step start GUI like screenshot above
 it requires an app to see, its up to yourchoice but here are some recommended apps
@@ -61,18 +61,14 @@ it requires an app to see, its up to yourchoice but here are some recommended ap
 ```bash
 vncserver --kill :1
 ```
-> if you press `logout` button inside vnc no need to do this step
+> If you press `logout` button inside vnc no need to do this step
 ### Logout from hippo :)
 ```bash
 exit
 ```
 
 ## 🔊  Audio 
-If you cant hear audio from vnc then use this command by openning a new session in termux
-Keep this in your `.bashrc` file
-```bash
-pulseaudio --start --load="module-native-protocol-tcp auth-ip-acl=127.0.0.1 auth-anonymous=1" --exit-idle-time=-1
-```
+Just execute `pulseserver-start` in termux and audio will get setup automatically.:)
 ## Default passwords
 `user` -> root
 
