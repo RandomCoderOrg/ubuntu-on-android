@@ -69,6 +69,12 @@ exit
 
 ## 🔊  Audio 
 Just execute `pulseserver-start` in termux and audio will get setup automatically.:)
+
+Or.
+
+```bash
+pulseaudio --start --load="module-native-protocol-tcp auth-ip-acl=127.0.0.1 auth-anonymous=1" --exit-idle-time=-1
+```
 ## Default passwords
 `user` -> root
 
