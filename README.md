@@ -26,8 +26,8 @@ A tweaked ubuntu-21.04 with xfce4 runs on android with termux/proot-distro
 - And its in early stages of building so some things may look kind of bad or missing(make sure to notice me if you find any in issues)
 - If you have any issues or suggestions make sure i know at https://github.com/RandomCoderOrg/ubuntu-on-android/issue (create an issue)
 
-# installation
-- first install termux from [termux.com](https://termux.com) or [F-Droid!](https://f-droid.org/en/packages/com.termux/)
+# Installation
+- First install termux from [termux.com](https://termux.com) or [F-Droid!](https://f-droid.org/en/packages/com.termux/)
 
 ## Getting Sources and install scripts
 ```bash
@@ -43,7 +43,7 @@ bash install.sh
 # install
 proot-distro install hippo
 ```
-### logging into hippo
+### Logging into hippo
 ```bash
 # run
 proot-distro login hippo
@@ -61,14 +61,14 @@ it requires an app to see, its up to yourchoice but here are some recommended ap
 ```bash
 vncserver --kill :1
 ```
-> if you press `logout` button inside vnc no need to do this step
+> If you press `logout` button inside vnc no need to do this step
 ### Logout from hippo :)
 ```bash
 exit
 ```
 
 ## 🔊  Audio 
-my Just use `pulseserver-start` in termux and audio will get setup automatically.:)
+Just execute `pulseserver-start` in termux and audio will get setup automatically.:)
 ## Default passwords
 `user` -> root
 
