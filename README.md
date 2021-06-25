@@ -67,8 +67,11 @@ vnc password -> `ubuntu`
 you can change it by command `vncpasswd`
 
 ## Appeared on
-- Youtube (1x1 Tech channel): https://www.youtube.com/watch?v=aJhV7K80OvQ
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/aJhV7K80OvQ/0.jpg)](https://www.youtube.com/watch?v=aJhV7K80OvQ)
+|  Channel | Link to source  |
+|---|---|
+| Youtube (1x1 Tech channel) | [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/aJhV7K80OvQ/0.jpg)](https://www.youtube.com/watch?v=aJhV7K80OvQ)
+
+
 
 A small help from me if you want to build your own rootfs [wiki_page](https://github.com/RandomCoderOrg/ubuntu-on-android/wiki/commands-took-to-make-a-custom-rootfs)
 # Devolopers & credits
