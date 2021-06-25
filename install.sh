@@ -1,45 +1,79 @@
 #!/usr/bin/env bash
 
-####################################
-# A Script to implant hippo inside 
-# proot-distro(for now!)
+##############
+# Script V01
 #
-TERMUX_PREFIX="/data/data/com.termux/files"
-DISTRO_PLUGINS_DIR="${TERMUX_PREFIX}/usr/etc/proot-distro"
 
-function _implant_()
+
+CACHE_ROOT="${HOME}/.uoa-cache-root"
+TPREFIX="/data/data/com.termux/files"
+BIN_DIR="${TPREFIX}/usr/bin"
+INSTALL_FOLDER="${TPREFIX}/usr/var/lib/proot-distro/installed-rootfs"
+HIPPO_DIR="${INSTALL_FOLDER}/hippo"
+SCRIPT_DIR="${TPREFIX}/usr/etc/proot-distro/"
+HIPPO_REPO_URL="https://github.com/RandomCoderOrg/ubuntu-on-android"
+FSM_URL="https://github.com/RandomCoderOrg/fs-manager-hippo"
+
+die   () { echo -e "\e[1;32m Error ${*}\e[0m";exit 1 ;:;}
+shout () { echo -e "${*}\e[0m";:; }
+
+function setup_and_clone()
 {
-    if [ -f hippo.sh ]; then
-        if ! [ -f "${DISTRO_PLUGINS_DIR}"/hippo.sh ]; then
-            cp -v hippo.sh "${DISTRO_PLUGINS_DIR}"
-            echo -e "Implant done......."
-            echo -e "- Now you can install ubuntu by running \e[1;32mproot-distro install hippo\e[0m"
-        else
-            echo "Looks like \"hippo\" is already installed..."
-            echo -e "you can install ubuntu by running \e[1;32mproot-distro install hippo\e[0m"
-            echo -e "you can login to ubuntu by running \e[1;32mproot-distro login hippo\e[0m" 
-        
-        fi
-        return 0
-    else
-        return 1
+    shout "Trying to update apt indexes...."
+    apt update; apt upgrade -y
+
+    if ! command -v git >> /dev/null; then
+    shout "Installing git.."
+        apt install git -y || {
+            die "Git installation failed"
+        }
     fi
+
+    if ! command -v pulseaudio >> /dev/null; then
+    shout "Installing pulseaudio..."
+        apt install pulseaudio -y || {
+            die "pulseaudio installation failed"
+        }
+    fi
+    
+    if ! command -v pv >> /dev/null; then
+    shout "installing pv.."
+        apt install pv -y
+    fi
+
+    git clone ${HIPPO_REPO_URL} "${CACHE_ROOT}/ubuntu-on-android" || die "failed to clone repo"
+    git clone ${FSM_URL} "${CACHE_ROOT}/fs-manager-hippo" || die "failed to clone repo"
+
+    install
 }
-############################
-#
-# REQUIREMENTS
 
-apt update; apt upgrade -y
+function install()
+{
+    ####
+    # Step 1
 
-if ! command -v proot-distro; then
-    apt install proot-distro -y
-fi
-if ! command -v pulseaudio; then
-    apt install pulseaudio -y
-    pulseaudio --start --load="module-native-protocol-tcp auth-ip-acl=127.0.0.1 auth-anonymous=1" --exit-idle-time=-1
-fi
+    shout "setting up implant..."
 
-########################
-if ! _implant_; then # this wont happen (mostly)
-    echo ":( \e[32m error...\e[0m Please create a issue at \e[1;32mhttps://github.com/SaicharanKandukuri/ubuntu-on-android/issues\e[0m to resolve "
-fi
+    if [ -f "${CACHE_ROOT}"/ubuntu-on-android/hippo.sh ]; then
+        cp "${CACHE_ROOT}"/ubuntu-on-android/hippo.sh ${SCRIPT_DIR}
+    fi
+
+    ####
+    # step 2
+
+    if [ -f "${CACHE_ROOT}"/fs-manager-hippo/install.sh ]; then
+        cd "${CACHE_ROOT}"/fs-manager-hippo || die "failed to cd ..."
+        bash install.sh || die "failed to install manager..."
+    fi
+
+    shout
+    shout "setup complete..."
+    shout "Now you can install and login with comand\e[1;32hippo"
+    shout "for info use hippo --help"
+    shout
+
+    exit 1
+
+}
+
+setup_and_clone
