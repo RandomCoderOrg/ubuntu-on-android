@@ -36,7 +36,7 @@ rm -rf ubuntu-on-android
 # install dependencies
 apt update; apt upgrade -y ; apt install -y pulseaudio proot-distro git -y
 # clone the code
-git clone https://github.com/RandomCoderOrg/ubuntu-on-android
+git clone -b v00-snapshot https://github.com/RandomCoderOrg/ubuntu-on-android
 # run the installer
 cd ubuntu-on-android
 bash install.sh
