@@ -32,7 +32,6 @@ get_download_url() {
 			armv7l|armv8l)
 			rootfs="https://github.com/RandomCoderOrg/ubuntu-on-android/releases/download/v02-xfce4/hippo-armhf-v02-xfce4.tar.gz"
 			sha256="e797c8590644ffd968dc1727474b533f7bc32e22f69a5f91e519614315baf211"
-			:
 			;;
 	esac
 
