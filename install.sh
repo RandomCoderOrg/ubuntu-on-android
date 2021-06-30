@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 ##############
-# Script V01
+# * Script V01
 #
 
 
@@ -16,6 +16,11 @@ FSM_URL="https://github.com/RandomCoderOrg/fs-manager-hippo"
 
 die   () { echo -e "\e[1;32m Error ${*}\e[0m";exit 1 ;:;}
 shout () { echo -e "${*}\e[0m";:; }
+
+#
+# * die function exits program
+# * shout just echo the messege out
+#
 
 function setup_and_clone()
 {
@@ -50,7 +55,7 @@ function setup_and_clone()
 function install()
 {
     ####
-    # Step 1
+    # * Step 1
 
     shout "setting up implant..."
 
@@ -62,8 +67,10 @@ function install()
     # step 2
 
     if [ -f "${CACHE_ROOT}"/fs-manager-hippo/install.sh ]; then
+        oldpwd="$(pwd)"
         cd "${CACHE_ROOT}"/fs-manager-hippo || die "failed to cd ..."
         bash install.sh || die "failed to install manager..."
+        cd "${oldpwd}"
     fi
 
     shout

@@ -3,7 +3,7 @@
 ##
 
 DISTRO_NAME="hippo"
-DISTRO_COMMENT="[Testing] A ubuntu 21.04 port with some tweaks"
+DISTRO_COMMENT="A ubuntu 21.04 port with some tweaks xfce4"
 
 # You can override a CPU architecture to let distribution
 # be executed by QEMU (user-mode).
@@ -27,8 +27,12 @@ get_download_url() {
 
 	case "$DISTRO_ARCH" in
 		aarch64)
-			rootfs="https://github.com/RandomCoderOrg/ubuntu-on-android/releases/download/v01-xfce4/ubuntu-21.04-xfce4-rootfs-v01-arm64.tar.gz"
-			sha256="e3bbb6f88cff4839fe6a607929708aa84b7fb2e1dc58a2d101471c4150c4447f"
+			rootfs="https://github.com/RandomCoderOrg/ubuntu-on-android/releases/download/v02-xfce4/hippo-arm64-v02-xfce4.tar.gz"
+			sha256="282a7498046ef0e4f0a57265725d739e67048bb2b64ba2f4441ca4ce1a67ea40"
+			armv7l|armv8l)
+			rootfs="https://github.com/RandomCoderOrg/ubuntu-on-android/releases/download/v02-xfce4/hippo-armhf-v02-xfce4.tar.gz"
+			sha256="e797c8590644ffd968dc1727474b533f7bc32e22f69a5f91e519614315baf211"
+			:
 			;;
 	esac
 
