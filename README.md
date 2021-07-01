@@ -92,9 +92,9 @@ DEV #0 -> [Saicharankandukuri](https://github.com/SaicharanKandukuri)
 
 Dev #1 -> [Gxmersam](https://github.com/GxmerSam)
 
-# Links to community
-- create an [issue](https://github.com/RandomCoderOrg/ubuntu-on-android/issues) if you want to make me create one!
-
+# Licence
+MIT
+Copyright (c) 2021 Saicharan Kandukuri
 
 <h2 align="center"> More Updates coming soon 💛</h2>
 
