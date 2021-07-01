@@ -29,7 +29,8 @@ get_download_url() {
 		aarch64)
 			rootfs="https://github.com/RandomCoderOrg/ubuntu-on-android/releases/download/v02-xfce4/hippo-arm64-v02-xfce4.tar.gz"
 			sha256="282a7498046ef0e4f0a57265725d739e67048bb2b64ba2f4441ca4ce1a67ea40"
-			armv7l|armv8l)
+		        ;;
+           armv7l|armv8l)
 			rootfs="https://github.com/RandomCoderOrg/ubuntu-on-android/releases/download/v02-xfce4/hippo-armhf-v02-xfce4.tar.gz"
 			sha256="e797c8590644ffd968dc1727474b533f7bc32e22f69a5f91e519614315baf211"
 			;;
