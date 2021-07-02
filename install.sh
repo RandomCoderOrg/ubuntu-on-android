@@ -4,22 +4,30 @@
 # * Script V01
 #
 
+# * Deafault color is Blue
+RST="\e[0m"
+RED="\e[1;31m" # *This is bold 
+GREEN="\e[1;32m"
+BLUE="\e[34m"
+DC=${BLUE}
+
+#GREEN_THIN="\e[32m"
 
 CACHE_ROOT="${HOME}/.uoa-cache-root"
 TPREFIX="/data/data/com.termux/files"
-BIN_DIR="${TPREFIX}/usr/bin"
+#BIN_DIR="${TPREFIX}/usr/bin"
 INSTALL_FOLDER="${TPREFIX}/usr/var/lib/proot-distro/installed-rootfs"
 HIPPO_DIR="${INSTALL_FOLDER}/hippo"
-SCRIPT_DIR="${TPREFIX}/usr/etc/proot-distro/"
+SCRIPT_DIR="${TPREFIX}/usr/etc/proot-distro"
 HIPPO_REPO_URL="https://github.com/RandomCoderOrg/ubuntu-on-android"
 FSM_URL="https://github.com/RandomCoderOrg/fs-manager-hippo"
 
-die   () { echo -e "\e[1;32m Error ${*}\e[0m";exit 1 ;:;}
-shout () { echo -e "${*}\e[0m";:; }
+die   () { echo -e "${RED}Error ${*}${RST}";exit 1 ;:;}
+shout () { echo -e "${DS}////////";echo -e "${*}";echo -e "////////${RST}";:; }
 
 #
 # * die function exits program
-# * shout just echo the messege out
+# * shout just echo the messege out (fancy one line 😁)
 #
 
 function setup_and_clone()
@@ -46,6 +54,11 @@ function setup_and_clone()
         apt install pv -y
     fi
 
+    if [ -d "${CACHE_ROOT}" ]; then
+        shout "Removing old cache......."
+        rm -rf "${CACHE_ROOT}"
+    fi
+
     git clone ${HIPPO_REPO_URL} "${CACHE_ROOT}/ubuntu-on-android" || die "failed to clone repo"
     git clone ${FSM_URL} "${CACHE_ROOT}/fs-manager-hippo" || die "failed to clone repo"
 
@@ -59,6 +72,12 @@ function install()
 
     shout "setting up implant..."
 
+    sleep 3
+    
+    if [ -f ${SCRIPT_DIR} ]; then
+        mv ${SCRIPT_DIR} "${SCRIPT_DIR}1"
+    fi
+
     if [ -f "${CACHE_ROOT}"/ubuntu-on-android/hippo.sh ]; then
         cp "${CACHE_ROOT}"/ubuntu-on-android/hippo.sh ${SCRIPT_DIR}
     fi
@@ -70,15 +89,11 @@ function install()
         oldpwd="$(pwd)"
         cd "${CACHE_ROOT}"/fs-manager-hippo || die "failed to cd ..."
         bash install.sh || die "failed to install manager..."
-        cd "${oldpwd}"
+        cd "${oldpwd}" || die "error"
     fi
 
-    shout
-    shout "setup complete..."
-    shout "Now you can install and login with comand\e[1;32hippo"
-    shout "for info use hippo --help"
-    shout
-
+    
+     shout "setup complete...\nNow you can install and login with comand${GREEN}hippo${DC}\nfor info use hippo --help"
     exit 1
 
 }
