@@ -13,6 +13,12 @@ DC=${BLUE}
 
 #GREEN_THIN="\e[32m"
 
+# * Used for testing
+if [ -n "$HIPPO_BRANCH" ]; then
+    BRANCH="$HIPPO_BRANCH"
+fi
+
+
 CACHE_ROOT="${HOME}/.uoa-cache-root"
 TPREFIX="/data/data/com.termux/files"
 #BIN_DIR="${TPREFIX}/usr/bin"
@@ -56,11 +62,16 @@ function setup_and_clone()
 
     if [ -d "${CACHE_ROOT}" ]; then
         shout "Removing old cache......."
-        rm -rf "${CACHE_ROOT}"
+        rm -rf "${CACHE_ROOT:?}/"*
     fi
 
-    git clone ${HIPPO_REPO_URL} "${CACHE_ROOT}/ubuntu-on-android" || die "failed to clone repo"
-    git clone ${FSM_URL} "${CACHE_ROOT}/fs-manager-hippo" || die "failed to clone repo"
+    if [ -n "${BRANCH}" ]; then
+        git clone -b "${BRANCH}" ${HIPPO_REPO_URL} "${CACHE_ROOT}/ubuntu-on-android" || die "failed to clone repo"
+        git clone -b "${BRANCH}" ${FSM_URL} "${CACHE_ROOT}/fs-manager-hippo" || die "failed to clone repo"
+    else
+        git clone ${HIPPO_REPO_URL} "${CACHE_ROOT}/ubuntu-on-android" || die "failed to clone repo"
+        git clone ${FSM_URL} "${CACHE_ROOT}/fs-manager-hippo" || die "failed to clone repo"
+    fi
 
     install
 }
