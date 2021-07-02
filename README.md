@@ -40,7 +40,7 @@ A note before you try
 ## Getting Sources and install scripts
 ```bash
 # download installer
-curl -o install.sh https://raw.githubusercontent.com/RandomCoderOrg/ubuntu-on-android/modified/install.sh
+curl -o install.sh https://git.io/hippo-installer
 # run the installer
 bash install.sh
 # Install ubuntu with this command
