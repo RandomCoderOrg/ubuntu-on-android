@@ -49,6 +49,15 @@ function setup_and_clone()
     shout "Trying to update apt indexes...."
     apt update; apt upgrade -y
 
+    if ! command -v proot-distro >> /dev/null; then
+    shout "Installing proot-distro..."
+        apt install proot-distro -y || {
+            die "pulseaudio installation failed"
+        }
+        lshout "Done..."
+    fi
+    
+    
     if ! command -v git >> /dev/null; then
     shout "Installing git.."
         apt install git -y || {
