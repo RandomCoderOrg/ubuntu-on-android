@@ -40,17 +40,12 @@ A note before you try
 
 ## Getting Sources and install scripts
 ```bash
-# remove ubuntu-on-android folder if exists
-rm -rf ubuntu-on-android
-# install dependencies
-apt update; apt upgrade -y ; apt install git -y
-# clone the code
-git clone https://github.com/RandomCoderOrg/ubuntu-on-android
+# download installer
+curl -L -o install.sh https://git.io/hippo-installer
 # run the installer
-cd ubuntu-on-android
 bash install.sh
-# start the manager for first time (if it can't find any pre-installed fs it automatiaclly starts installing it)
-hippo
+# Install ubuntu with this command
+hippo --install
 ```
 ### Basic Usage
   | **Command**        | **Usage** |
