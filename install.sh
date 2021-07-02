@@ -29,7 +29,7 @@ HIPPO_REPO_URL="https://github.com/RandomCoderOrg/ubuntu-on-android"
 FSM_URL="https://github.com/RandomCoderOrg/fs-manager-hippo"
 
 die   () { echo -e "${RED}Error ${*}${RST}";exit 1 ;:;}
-shout () { echo -e "${DS}////////";echo -e "${*}";echo -e "////////${RST}";:; }
+shout () { echo -e "${DC}////////";echo -e "${*}";echo -e "////////${RST}";:; }
 
 #
 # * die function exits program
