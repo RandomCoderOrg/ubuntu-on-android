@@ -40,7 +40,7 @@ A note before you try
 ## Getting Sources and install scripts
 ```bash
 # download installer
-curl -o install.sh -L https://git.io/hippo-installer
+curl -L -o install.sh https://git.io/hippo-installer
 # run the installer
 bash install.sh
 # Install ubuntu with this command
