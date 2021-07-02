@@ -36,7 +36,7 @@ shout  () { echo -e "${DC}-----";echo -e "${*}";echo -e "-----${RST}";:; }
 lshout () { echo -e "${DC}";echo -e "${*}";echo -e "${RST}";:; }
 
 
-shout "\e[1;32 Hippo Installer v${version}"
+shout "\e[1;32m Hippo Installer v${version}"
 sleep 2
 
 #
@@ -76,6 +76,7 @@ function setup_and_clone()
         lshout "Done..."
     fi
 
+    shout "Cloning code from Github........."
     if [ -n "${BRANCH}" ]; then
         git clone -b "${BRANCH}" ${HIPPO_REPO_URL} "${CACHE_ROOT}/ubuntu-on-android" || die "failed to clone repo"
         git clone -b "${BRANCH}" ${FSM_URL} "${CACHE_ROOT}/fs-manager-hippo" || die "failed to clone repo"
