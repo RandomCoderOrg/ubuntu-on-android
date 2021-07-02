@@ -4,6 +4,8 @@
 # * Script V01
 #
 
+version="01"
+
 # * Deafault color is Blue
 RST="\e[0m"
 RED="\e[1;31m" # *This is bold 
@@ -28,8 +30,14 @@ SCRIPT_DIR="${TPREFIX}/usr/etc/proot-distro"
 HIPPO_REPO_URL="https://github.com/RandomCoderOrg/ubuntu-on-android"
 FSM_URL="https://github.com/RandomCoderOrg/fs-manager-hippo"
 
-die   () { echo -e "${RED}Error ${*}${RST}";exit 1 ;:;}
-shout () { echo -e "${DC}////////";echo -e "${*}";echo -e "////////${RST}";:; }
+die    () { echo -e "${RED}Error ${*}${RST}";exit 1 ;:;}
+warn   () { echo -e "${RED}Error ${*}${RST}";:;}
+shout  () { echo -e "${DC}-----";echo -e "${*}";echo -e "-----${RST}";:; }
+lshout () { echo -e "${DC}";echo -e "${*}";echo -e "${RST}";:; }
+
+
+shout "\e[1;32 Hippo Installer v${version}"
+sleep 2
 
 #
 # * die function exits program
@@ -46,6 +54,7 @@ function setup_and_clone()
         apt install git -y || {
             die "Git installation failed"
         }
+        lshout "Done..."
     fi
 
     if ! command -v pulseaudio >> /dev/null; then
@@ -53,6 +62,7 @@ function setup_and_clone()
         apt install pulseaudio -y || {
             die "pulseaudio installation failed"
         }
+        lshout "Done..."
     fi
     
     if ! command -v pv >> /dev/null; then
@@ -63,6 +73,7 @@ function setup_and_clone()
     if [ -d "${CACHE_ROOT}" ]; then
         shout "Removing old cache......."
         rm -rf "${CACHE_ROOT:?}/"*
+        lshout "Done..."
     fi
 
     if [ -n "${BRANCH}" ]; then
@@ -72,6 +83,7 @@ function setup_and_clone()
         git clone ${HIPPO_REPO_URL} "${CACHE_ROOT}/ubuntu-on-android" || die "failed to clone repo"
         git clone ${FSM_URL} "${CACHE_ROOT}/fs-manager-hippo" || die "failed to clone repo"
     fi
+    lshout "Done..."
 
     install
 }
@@ -81,7 +93,7 @@ function install()
     ####
     # * Step 1
 
-    shout "setting up implant..."
+    shout "setting up proot-distro hippo implant..."
 
     sleep 3
     
