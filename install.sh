@@ -104,7 +104,7 @@ function install()
     fi
 
     
-     shout "setup complete...\nNow you can install and login with comand${GREEN}hippo${DC}\nfor info use hippo --help"
+     shout "setup complete...\nNow you can install and login with comand ${GREEN}hippo${DC} \nfor info use hippo --help"
     exit 1
 
 }
