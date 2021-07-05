@@ -35,6 +35,13 @@ A note before you try
 - This project comes without warranties or data protection
 </details>
 
+## supported architectures status
+| arch  | status |
+|------ |--------|
+| arm64 | ![stat](https://img.shields.io/badge/-installable-brightgreen) |
+| armhf `(armv7l&armv8l)` | ![stat](https://img.shields.io/badge/-unstable-orange) - (no testers) |
+| Others | `not started` |
+
 # Installation
 - First install termux from [termux.com](https://termux.com) or [F-Droid!](https://f-droid.org/en/packages/com.termux/)
 
