@@ -56,10 +56,12 @@ hippo --install
   | **Command**        | **Usage** |
   |--------------------|-----------|
   | `hippo`            | To login to shell |
-  | `hippo startvnc`   | start vncserver at port `1` (Tou can change default port by exporting env varaible `` to a port number) |
-  | `hippo stopvnc`    | stop vncserver at given or default port `1`
   |  `hippo upgrade` | to upgrade fs or to get new features if avalibe |
 
+<!---
+  | `hippo startvnc`   | start vncserver at port `1` (Tou can change default port by exporting env varaible `` to a port number) |
+  | `hippo stopvnc`    | stop vncserver at given or default port `1`
+-->
 
 ## 🔊  Audio 
 pulseaudio starts everytime you invoke start commands with `hippo`
