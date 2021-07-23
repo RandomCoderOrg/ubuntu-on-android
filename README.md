@@ -1,7 +1,7 @@
 ![Screenshot_20210605-115657_VNC Viewer](src/images/edited_showcase.png "A Screenshot of ubuntu xfce showing some pre-installed apps")
 
-<h1 align="Center">Ubuntu 21.04 On android</h1>
-A tweaked ubuntu-21.04 with xfce4 runs on android with termux/proot-distro
+<h1 align="Center">Ubuntu On android</h1>
+A tweaked ubuntu with xfce4 runs on android with termux/proot-distro
 
 > This means now you can install ubuntu like above screenshot right in your smartphone without destroying your phone with rooting
 
@@ -11,7 +11,7 @@ A tweaked ubuntu-21.04 with xfce4 runs on android with termux/proot-distro
 |status| ![img3](https://img.shields.io/badge/Installable-green) |
 |Maintainence status | ![stale](https://img.shields.io/badge/-Active-orange) |
 |Platform | **Android Termux App (proot `prtace()` )**|
-| Linux Distribution | ![badge3](https://img.shields.io/badge/Linux%20Distribution-UBUNTU%20Hippo%2021.04-brightgreen) |
+| Linux Distribution | ![badge3](https://img.shields.io/badge/Linux%20Distribution-UBUNTU%20Hippo%2021.04-brightgreen) ![badge3](https://img.shields.io/badge/Linux%20Distribution-UBUNTU%20focal%2020-brightgreen) |
 |Community | [![Support Server](https://img.shields.io/discord/851345998831157288.svg?label=Discord&logo=Discord&colorB=7289da&style=for-the-badge)](https://discord.gg/y432PhPYCS) [![Join the chat at https://gitter.im/ubuntu-on-android/community](https://badges.gitter.im/ubuntu-on-android/community.svg)](https://gitter.im/ubuntu-on-android/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) |
 | Code quality & stats | [![CodeFactor](https://www.codefactor.io/repository/github/randomcoderorg/ubuntu-on-android/badge)](https://www.codefactor.io/repository/github/randomcoderorg/ubuntu-on-android) |
 - codename -> `hippo`
@@ -37,7 +37,7 @@ A note before you try
 | arch  | status |
 |------ |--------|
 | arm64 | ![stat](https://img.shields.io/badge/-installable-brightgreen) |
-| armhf `(armv7l&armv8l)` | ![stat](https://img.shields.io/badge/-partially%20supported-orange) |
+| armhf `(armv7l&armv8l)` | ![stat](https://img.shields.io/badge/-testing-orange) |
 | Others | `not started` |
 
 # Installation
