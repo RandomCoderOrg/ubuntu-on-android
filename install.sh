@@ -22,8 +22,6 @@ DC=${BLUE}
 # if set then installer clones code from specified branch (sensitive)
 if [ -n "$HIPPO_BRANCH" ]; then
     BRANCH="$HIPPO_BRANCH"
-else
-    SUPPORTED_ARCH="arm64"
 fi
 
 
@@ -79,13 +77,6 @@ lshout () { echo -e "${DC}";echo -e "${*}";echo -e "${RST}";:; }
 shout "\e[1;32m Hippo Installer v${version}"
 sleep 2
 
-case $(uname -m) in
-    aarch64) : ;;
-    *) 
-    warn "sorry Only 64bit(aarch64) os architecture is supported for now"
-    die "Join us at discord to talk https://discord.gg/u7KDGUc3Aw"
-    ;;
-esac
 
 ######################################
 # * function setup_and_clone
