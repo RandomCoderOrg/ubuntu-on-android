@@ -80,8 +80,7 @@ sleep 2
 case $(uname -m) in
     aarch64) : ;;
     *) 
-    warn "sorry Only 64bit(aarch64) os architecture is supported for now"
-    die "Join us at discord to talk https://discord.gg/u7KDGUc3Aw"
+    die ": sorry Only 64bit(aarch64) os architecture is supported for now"
     ;;
 esac
 ######################################
