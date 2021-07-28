@@ -31,7 +31,7 @@ get_download_url() {
 			sha256="282a7498046ef0e4f0a57265725d739e67048bb2b64ba2f4441ca4ce1a67ea40"
 		        ;;
           armv7l|armv8l)
-			rootfs="https://github.com/RandomCoderOrg/ubuntu-on-android/releases/download/v02-xfce4-test/hippo-focal-beta-test.tar.gz"
+			rootfs="https://github.com/RandomCoderOrg/ubuntu-on-android/releases/download/v02-xfce4-test/hippo-focal-beta-test2.tar.gz"
 			sha256="60e39df11819a6f571011bdffee0c11caf2e18cd24d4f1a49ea3aff575f102f8"
 			;;
 	esac
