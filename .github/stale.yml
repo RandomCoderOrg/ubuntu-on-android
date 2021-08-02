@@ -13,4 +13,6 @@ markComment: >
   recent activity. It will be closed if no further activity occurs. Thank you
   for your contributions.
 # Comment to post when closing a stale issue. Set to `false` to disable
-closeComment: false
+closeComment: >
+  Time to close this
+  ![BrownSpiffyEmperorshrimp-size_restricted](https://user-images.githubusercontent.com/68287637/127849638-d0daf286-f852-46cf-896e-1adde06e8684.gif)
