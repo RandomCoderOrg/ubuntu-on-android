@@ -78,9 +78,9 @@ shout "\e[1;32m Hippo Installer v${version}"
 sleep 2
 
 case $(uname -m) in
-    aarch64) : ;;
+    aarch64|armv7l|armv8l) : ;;
     *) 
-    die ": sorry Only 64bit(aarch64) os architecture is supported for now"
+    die ": sorry Only aarch64 armv7l armv8l os architecture is supported for now"
     ;;
 esac
 ######################################
