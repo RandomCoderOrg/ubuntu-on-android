@@ -37,7 +37,8 @@ A note before you try
 | arch  | status |
 |------ |--------|
 | arm64 | ![stat](https://img.shields.io/badge/-installable-brightgreen) |
-| armhf `(armv7l&armv8l)` | ![stat](https://img.shields.io/badge/-partially%20supported-orange) |
+| armv7l | ![stat](https://img.shields.io/badge/-installable-brightgreen) |
+| armv8l | ![stat](https://img.shields.io/badge/-partially%20supported-orange) |
 | Others | `not started` |
 
 # Installation
