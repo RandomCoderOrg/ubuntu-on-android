@@ -30,6 +30,7 @@ A note before you try
 - This project works by compliying to selinux android. and all aim of the project is just run linux on android without direct root with a twist and this project improves time by time with your support and motivation.
 - the linux you trying to install from this repo is not fully functional in target space because of the selinux policies, and increasing requirement in linux requirements and also because project is set to run with `ptrace()` a low level access in android kernel
 - Graphics performence is really bad cause proot and usage on VNC, we dont support any adoptation on improving it **for now** cause insufficient data on android (ping me in discord if you have any ideas or any codes on this) 
+- - **(Update)** see https://github.com/RandomCoderOrg/ubuntu-on-android/wiki/XWayland-in-proot to run smooth and fast session
 - This project comes without warranties or data protection
 </details>
 
@@ -57,12 +58,15 @@ hippo --install
   | **Command**        | **Usage** |
   |--------------------|-----------|
   | `hippo`            | To login to shell |
-  |  `hippo upgrade` | to upgrade fs or to get new features if avalibe |
-
-<!---
-  | `hippo startvnc`   | start vncserver at port `1` (Tou can change default port by exporting env varaible `` to a port number) |
+  |  `hippo upgrade` | to upgrade fs or to get new features if available |
+  | `startvnc`   | start vncserver at port `1` (you can change default port by exporting env varaible `DEFAULT_VNC_PORT` to a port number) |
   | `hippo stopvnc`    | stop vncserver at given or default port `1`
--->
+  | `hippo --enable-dbus` | To start hippo with dbus hack enabled |
+  | `hippo --enable-dbus-vnc` | To start vnc session with dbus hack enabled |
+
+## Environment Variables
+- `DEFAULT_VNC_PORT` to set vnc port for scripts
+- `HIPPO_BRANCH` to set custom branch for cloning code
 
 ## 🔊  Audio 
 pulseaudio starts everytime you invoke start commands with `hippo`
