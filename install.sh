@@ -8,6 +8,8 @@
 
 
 version="01"
+version_code_name="mad installer mi01"
+installer_authors="saicharankandukuri"
 
 # * Deafault color is Blue
 RST="\e[0m"
@@ -74,7 +76,7 @@ shout  () { echo -e "${DC}-----";echo -e "${*}";echo -e "-----${RST}";:; }
 lshout () { echo -e "${DC}";echo -e "${*}";echo -e "${RST}";:; }
 
 
-shout "\e[1;32m Hippo Installer v${version}"
+shout "\e[1;32m Hippo Installer v${version} ${version_code_name} \n by ${installer_authors}"
 sleep 2
 
 case $(uname -m) in
@@ -159,6 +161,9 @@ function install()
 
     
      shout "setup complete...\nNow you can install and login with comand ${GREEN}hippo${DC} \nfor info use hippo --help"
+     lshout "for additional documentation see: https://github.com/RandomCoderOrg/ubuntu-on-android#basic-usage"
+     lshout "report issues and feature requests at: https://github.com/RandomCoderOrg/ubuntu-on-android/issues"
+     lshout "Join Our discord server: https://discord.gg/u7KDGUc3Aw"
     exit 1
 
 }
