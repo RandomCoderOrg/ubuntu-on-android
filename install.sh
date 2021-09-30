@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 ####################################################
-# Hippo installer Script V01 (mad installer)
+# UDROID installer Script V01 (mad installer)
 # A script made by @zman-1x1 saicharankandukuri
 # Copyright (c) 2021 Saicharan Kandukuri
 # hello.1x1.sai@gmail.com
@@ -41,8 +41,8 @@ BIN_DIR="${TPREFIX}/usr/bin"
 # * used when checking for hippo
 INSTALL_FOLDER="${TPREFIX}/usr/var/lib/proot-distro/installed-rootfs"
 
-# HIPPO_DIR variable points to folder where hippo root filesystem is in
-HIPPO_DIR="${INSTALL_FOLDER}/hippo"
+# UDROID_DIR variable points to folder where hippo root filesystem is in
+UDROID_DIR="${INSTALL_FOLDER}/udroid"
 
 # SCRIPT_DIR variable points to folder where plugins for proot-distro is stored
 # * this is where hippo.sh plugin goes
@@ -51,7 +51,7 @@ SCRIPT_DIR="${TPREFIX}/usr/etc/proot-distro/"
 
 # HIPPO_REPO_URL & FSM_URL are github repo urls later used to clone the code
 HIPPO_REPO_URL="https://github.com/RandomCoderOrg/ubuntu-on-android"
-FSM_URL="https://github.com/RandomCoderOrg/fs-manager-hippo"
+FSM_URL="https://github.com/RandomCoderOrg/fs-manager-udroid"
 
 # DEPENDS programs required to run Hippo
 # * proot-distro - A proot manager tool
@@ -76,7 +76,7 @@ shout  () { echo -e "${DC}-----";echo -e "${*}";echo -e "-----${RST}";:; }
 lshout () { echo -e "${DC}";echo -e "${*}";echo -e "${RST}";:; }
 
 
-shout "\e[1;32m Hippo Installer v${version} ${version_code_name} \n by ${installer_authors}"
+shout "\e[1;32m Udroid Installer v${version} ${version_code_name} \n by ${installer_authors}"
 sleep 2
 
 case $(uname -m) in
@@ -119,10 +119,10 @@ function setup_and_clone()
     shout "Cloning code from Github........."
     if [ -n "${BRANCH}" ]; then
         git clone -b "${BRANCH}" ${HIPPO_REPO_URL} "${CACHE_ROOT}/ubuntu-on-android" || die "failed to clone repo"
-        git clone -b "${BRANCH}" ${FSM_URL} "${CACHE_ROOT}/fs-manager-hippo" || die "failed to clone repo"
+        git clone -b "${BRANCH}" ${FSM_URL} "${CACHE_ROOT}/fs-manager-udroid" || die "failed to clone repo"
     else
         git clone ${HIPPO_REPO_URL} "${CACHE_ROOT}/ubuntu-on-android" || die "failed to clone repo"
-        git clone ${FSM_URL} "${CACHE_ROOT}/fs-manager-hippo" || die "failed to clone repo"
+        git clone ${FSM_URL} "${CACHE_ROOT}/fs-manager-udroid" || die "failed to clone repo"
     fi
     lshout "Done..."
 
@@ -133,7 +133,7 @@ function setup_and_clone()
 # * function install
 #
 # 1. chech for plugin and copy to proot-distro plugin folder
-# 2. chech for fs-manager-hippo(hippo) install script in its root directory and run it
+# 2. chech for fs-manager-udroid(hippo) install script in its root directory and run it
 # 3. trigger hippo installation
 # 4. show echo of installation complete and clear screen
 # if anything goes wrong or any program in code fails kill the installation by calling die function
@@ -152,9 +152,9 @@ function install()
         cp "${CACHE_ROOT}"/ubuntu-on-android/hippo.sh ${SCRIPT_DIR}
     fi
 
-    if [ -f "${CACHE_ROOT}"/fs-manager-hippo/install.sh ]; then
+    if [ -f "${CACHE_ROOT}"/fs-manager-udroid/install.sh ]; then
         oldpwd="$(pwd)"
-        cd "${CACHE_ROOT}"/fs-manager-hippo || die "failed to cd ..."
+        cd "${CACHE_ROOT}"/fs-manager-udroid || die "failed to cd ..."
         bash install.sh || die "failed to install manager..."
         cd "${oldpwd}" || die "error"
     fi

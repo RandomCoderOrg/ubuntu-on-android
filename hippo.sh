@@ -1,4 +1,4 @@
-DISTRO_NAME="hippo"
+DISTRO_NAME="udroid"
 DISTRO_COMMENT="A ubuntu 21.04 port with some tweaks xfce4"
 
 TARBALL_STRIP_OPT=0
