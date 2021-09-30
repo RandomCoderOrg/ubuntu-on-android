@@ -94,6 +94,15 @@ esac
 # 4. call install function
 # if anything goes wrong or any program in code fails kill the installation by calling die function
 
+function _NOTICE_()
+{
+    if [ ! -f ~/.udroid_notice.lock ]; then
+        touch ~/.udroid_notice.lock
+        shout "The Code name for this ubuntu is chaned from \"hippo\" to \"udroid\""
+        sleep 5
+    fi
+}
+
 function setup_and_clone()
 {
     shout "Trying to update apt indexes...."
@@ -168,4 +177,5 @@ function install()
 
 }
 
+_NOTICE_
 setup_and_clone
