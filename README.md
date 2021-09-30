@@ -14,7 +14,7 @@ A tweaked ubuntu-21.04 with xfce4 runs on android with termux/proot-distro
 | Linux Distribution | ![badge3](https://img.shields.io/badge/Linux%20Distribution-UBUNTU%20Hippo%2021.04-brightgreen) |
 |Community | [![Support Server](https://img.shields.io/discord/851345998831157288.svg?label=Discord&logo=Discord&colorB=7289da&style=for-the-badge)](https://discord.gg/y432PhPYCS) [![Join the chat at https://gitter.im/ubuntu-on-android/community](https://badges.gitter.im/ubuntu-on-android/community.svg)](https://gitter.im/ubuntu-on-android/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) |
 | Code quality & stats | [![CodeFactor](https://www.codefactor.io/repository/github/randomcoderorg/ubuntu-on-android/badge)](https://www.codefactor.io/repository/github/randomcoderorg/ubuntu-on-android) |
-- codename -> `hippo`
+- codename -> `udroid`
 
 <details>
   <summary>Note & Disclaimer (Must read !)</summary>
@@ -48,28 +48,28 @@ A note before you try
 ## Getting Sources and install scripts
 ```bash
 # download installer
-curl -L -o install.sh https://git.io/hippo-installer
+curl -L -o install.sh https://git.io/udroid-installer
 # run the installer
 bash install.sh
 # Install ubuntu with this command
-hippo --install
+udroid --install
 ```
 ### Basic Usage
   | **Command**        | **Usage** |
   |--------------------|-----------|
-  | `hippo`            | To login to shell |
-  |  `hippo upgrade` | to upgrade fs or to get new features if available |
+  | `udroid`            | To login to shell |
+  |  `udroid upgrade` | to upgrade fs or to get new features if available |
   | `startvnc`   | start vncserver at port `1` (you can change default port by exporting env varaible `DEFAULT_VNC_PORT` to a port number) |
-  | `hippo stopvnc`    | stop vncserver at given or default port `1`
-  | `hippo --enable-dbus` | To start hippo with dbus hack enabled |
-  | `hippo --enable-dbus-vnc` | To start vnc session with dbus hack enabled |
+  | `udroid stopvnc`    | stop vncserver at given or default port `1`
+  | `udroid --enable-dbus` | To start udroid with dbus hack enabled |
+  | `udroid --enable-dbus-vnc` | To start vnc session with dbus hack enabled |
 
 ## Environment Variables
 - `DEFAULT_VNC_PORT` to set vnc port for scripts
 - `HIPPO_BRANCH` to set custom branch for cloning code
 
 ## 🔊  Audio 
-pulseaudio starts everytime you invoke start commands with `hippo`
+pulseaudio starts everytime you invoke start commands with `udroid`
 
 > You can start audio manually with this command
 ```bash
@@ -79,7 +79,7 @@ pulseaudio --start --load="module-native-protocol-tcp auth-ip-acl=127.0.0.1 auth
 
 |  |password|
 |--|--------|
-| hippo user | `secret` |
+| udroid user | `secret` |
 |vncserver root | `secret` |
 
 ## some Screenshots
