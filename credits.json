@@ -13,13 +13,13 @@
                 "saicharankandukuri","GxmerSam", "Andre-cmd-rgb"
             ]
         },
-        "fs-manager-hippo":
+        "fs-manager-udroid":
         {
-            "name": "fs-manager-hippo",
+            "name": "fs-manager-udroid",
             "owner": "saicharankandukuri",
             "version": "V01",
             "license": "MIT License",
-            "extra_script": ["vncserver", "pulseeffects", "hippo"]
+            "extra_script": ["vncserver", "pulseeffects", "udroid"]
         },
         "wrapper":
         {
