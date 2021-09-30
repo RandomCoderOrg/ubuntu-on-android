@@ -149,7 +149,7 @@ function setup_and_clone()
 
 function install()
 {
-    shout "setting up proot-distro hippo implant..."
+    shout "setting up proot-distro udroid implant..."
 
     sleep 3
     
@@ -157,8 +157,8 @@ function install()
         mv ${SCRIPT_DIR} "${SCRIPT_DIR}1"
     fi
 
-    if [ -f "${CACHE_ROOT}"/ubuntu-on-android/hippo.sh ]; then
-        cp "${CACHE_ROOT}"/ubuntu-on-android/hippo.sh ${SCRIPT_DIR}
+    if [ -f "${CACHE_ROOT}"/ubuntu-on-android/udroid.sh ]; then
+        cp "${CACHE_ROOT}"/ubuntu-on-android/udroid.sh ${SCRIPT_DIR}
     fi
 
     if [ -f "${CACHE_ROOT}"/fs-manager-udroid/install.sh ]; then
