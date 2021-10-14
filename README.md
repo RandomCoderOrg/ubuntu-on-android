@@ -26,10 +26,10 @@ Just before starting the installation, you can check [this.](https://github.com/
 ## Installation
 Installation, variables, sound and other things can be found [here.](https://github.com/RandomCoderOrg/ubuntu-on-android/blob/beta/installation.md)
 
-## Some Screensho
+## Some Screenshot
 
 ![image](IMG_20211014_084106.jpg) 
-![image](src/i
+![image](src/images/four.png)
 ![image](src/images/three.png) 
 More can be found [here.](https://github.com/RandomCoderOrg/ubuntu-on-android/blob/beta/showcase.md)
 
