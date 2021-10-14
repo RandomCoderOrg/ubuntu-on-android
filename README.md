@@ -12,7 +12,7 @@ A tweaked ubuntu-21.04 with xfce4 runs on android with termux/proot-distro
 |Maintainence status | ![stale](https://img.shields.io/badge/-Active-orange) |
 |Platform | **Android Termux App (proot `prtace()` )**|
 | Linux Distribution | ![badge3](https://img.shields.io/badge/Linux%20Distribution-UBUNTU%20Hippo%2021.04-brightgreen) |
-|Community | [![Support Server](https://img.shields.io/discord/851345998831157288.svg?label=Discord&logo=Discord&colorB=7289da&style=for-the-badge)](https://discord.gg/h7wZ9BfbU9) [![Join the chat at https://gitter.im/ubuntu-on-android/community](https://badges.gitter.im/ubuntu-on-android/community.svg)](https://gitter.im/ubuntu-on-android/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) |
+|Community | [![Support Server](https://img.shields.io/discord/892727774828199976.svg?label=Discord&logo=Discord&colorB=7289da&style=for-the-badge)](https://discord.gg/h7wZ9BfbU9) [![Join the chat at https://gitter.im/ubuntu-on-android/community](https://badges.gitter.im/ubuntu-on-android/community.svg)](https://gitter.im/ubuntu-on-android/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) |
 | Code quality & stats | [![CodeFactor](https://www.codefactor.io/repository/github/randomcoderorg/ubuntu-on-android/badge)](https://www.codefactor.io/repository/github/randomcoderorg/ubuntu-on-android) |
 - codename -> `udroid`
 
