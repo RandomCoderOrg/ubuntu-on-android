@@ -1,7 +1,12 @@
 # Installation
-- First install termux from [termux.com](https://termux.com) or [F-Droid!](https://f-droid.org/en/packages/com.termux/)
 
-## Getting Sources and install scripts
+- First install termux from [termux.com](https://termux.com) or [F-Droid!](https://f-droid.org/en/packages/com.termux/)
+- For display, you can use [Xwayland](https://github.com/termux/termux-x11) too. 
+
+### Video tutorial
+https://youtu.be/iVF0swfqsKo
+
+### Getting Sources and install scripts
 ```bash
 # download installer
 curl -L -o install.sh https://git.io/hippo-installer
@@ -20,20 +25,36 @@ udroid --install
   | `udroid --enable-dbus` | To start udroid with dbus hack enabled |
   | `udroid --enable-dbus-vnc` | To start vnc session with dbus hack enabled |
 
-## Environment Variables
+### Env Variables
 - `DEFAULT_VNC_PORT` to set vnc port for scripts
 - `HIPPO_BRANCH` to set custom branch for cloning code
 
-## 🔊  Audio 
-pulseaudio starts everytime you invoke start commands with `udroid`
+### Audio 
+Pulseaudio starts everytime you invoke start commands with `udroid`
 
 > You can start audio manually with this command
 ```bash
 pulseaudio --start --load="module-native-protocol-tcp auth-ip-acl=127.0.0.1 auth-anonymous=1" --exit-idle-time=-1
 ```
-## Default passwords
+### Default passwds for XFCE4
 
 |  |password|
 |--|--------|
 | udroid user | `secret` |
 |vncserver root | `secret` |
+
+### Setting up Xwayland
+
+First up of all install Termux-x11 from above link, in termux use
+```
+XDG_RUNTIME_DIR=$PREFIX/bin Xwayland -ac :1 > /dev/null &
+```
+This time start udroid with
+```
+proot-distro login udroid --shared-tmp
+```
+And then start Xfce4 on Xwayland via
+```
+DISPLAY=:1 xfce4-session
+```
+
