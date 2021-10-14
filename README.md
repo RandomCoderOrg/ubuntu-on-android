@@ -21,17 +21,17 @@ codename = `udroid`
 | Others | `not started` |
 
 ## Desclaimer
-Just before starting the installation, you can check [this.](https://github.com/GxmerSam/ubuntu-on-android/blob/modified/desclaimer.md)
+Just before starting the installation, you can check [this.](https://github.com/RandomCoderOrg/ubuntu-on-android/blob/beta/desclaimer.md)
 
 ## Installation
-Installation, variables, sound and other things can be found [here.](https://github.com/GxmerSam/ubuntu-on-android/blob/modified/installation.md)
+Installation, variables, sound and other things can be found [here.](https://github.com/RandomCoderOrg/ubuntu-on-android/blob/beta/installation.md)
 
-## Some Screenshots
+## Some Screensho
 
 ![image](IMG_20211014_084106.jpg) 
-![image](src/images/six.png)
+![image](src/i
 ![image](src/images/three.png) 
-More can be found [here.](https://github.com/GxmerSam/ubuntu-on-android/blob/modified/showcase.md)
+More can be found [here.](https://github.com/RandomCoderOrg/ubuntu-on-android/blob/beta/showcase.md)
 
 A small help from me if you want to build your own rootfs [wiki_page](https://github.com/RandomCoderOrg/ubuntu-on-android/wiki/commands-took-to-make-a-custom-rootfs)
 
@@ -45,6 +45,6 @@ Dev #1 = [Gxmersam](https://github.com/GxmerSam)
 MIT
 Copyright (c) 2021 Saicharan Kandukuri
 
-<h2 align="center"> More Updates coming soon...</h2>
+<h3 align="center"> More Updates coming soon...</h3>
 
 feel free to contribute to this repo.
