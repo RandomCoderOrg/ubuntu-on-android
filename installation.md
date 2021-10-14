@@ -43,7 +43,7 @@ pulseaudio --start --load="module-native-protocol-tcp auth-ip-acl=127.0.0.1 auth
 | udroid user | `secret` |
 |vncserver root | `secret` |
 
-### Setting up Xwayland
+### Setting up Xwayland manually
 
 First up of all install Termux-x11 from above link, in termux use
 ```
