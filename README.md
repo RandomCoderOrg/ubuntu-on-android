@@ -28,7 +28,7 @@ Installation, variables, sound and other things can be found [here.](https://git
 
 ## Some Screenshot
 
-![image](IMG_20211014_084106.jpg) 
+![image](src/images/IMG_20211014_084106.jpg) 
 ![image](src/images/four.png)
 ![image](src/images/three.png) 
 More can be found [here.](https://github.com/RandomCoderOrg/ubuntu-on-android/blob/beta/showcase.md)
