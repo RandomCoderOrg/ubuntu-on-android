@@ -1,4 +1,4 @@
-![Banner Image](https://raw.githubusercontent.com/GxmerSam/ubuntu-on-android/modified/banner.jpg "A Image on Ubuntu-on-android running mate desktop on smartphone")
+![Banner Image](src/images/banner.jpg "A Image on Ubuntu-on-android running mate desktop on smartphone")
 
 <h2 align="Center">Ubuntu-21.04 on android</h2>
 Ubuntu-on-android aims to run ubuntu with pre-installed Desktop Environment, development tools, and software on top of android without root with the help of proot in termux application. This project just like any other linux on android projects but with aim of making it easy for end user on setting up linux.
@@ -28,9 +28,9 @@ Installation, variables, sound and other things can be found [here.](https://git
 
 ## Some Screenshot
 
-![image](src/images/IMG_20211014_084106.jpg) 
+![image](src/images/IMG_20211014_084106.jpg)
 ![image](src/images/four.png)
-![image](src/images/three.png) 
+![image](src/images/three.png)
 More can be found [here.](https://github.com/RandomCoderOrg/ubuntu-on-android/blob/beta/showcase.md)
 
 A small help from me if you want to build your own rootfs [wiki_page](https://github.com/RandomCoderOrg/ubuntu-on-android/wiki/commands-took-to-make-a-custom-rootfs)
