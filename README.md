@@ -1,14 +1,24 @@
-![Banner Image](.github/assets/banner.jpg "A Image on Ubuntu-on-android running mate desktop on smartphone")
-
-<h2 align="Center">Ubuntu-21.04 on android</h2>
-Ubuntu-on-android aims to run ubuntu with pre-installed Desktop Environment, development tools, and software on top of android without root with the help of proot in termux application. This project just like any other linux on android projects but with aim of making it easy for end user on setting up linux.
-
+<p align="Center">
+<img src=".github/assets/udroid_logo.png" height="300" >
+</p>
 <p align="Center">
 <img src=".github/assets/badge-bash.svg">
 <img src="https://badges.frapsoft.com/os/v1/open-source.svg?v=103">
 </p>
 
-[![Support Server](https://img.shields.io/discord/892727774828199976?color=blue&label=join%20%23udroid&logo=discord&logoColor=white&style=for-the-badge)](https://discord.gg/h7wZ9BfbU9) [![Join the chat at https://gitter.im/ubuntu-on-android/community](https://badges.gitter.im/ubuntu-on-android/community.svg)](https://gitter.im/ubuntu-on-android/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) [![CodeFactor](https://www.codefactor.io/repository/github/randomcoderorg/ubuntu-on-android/badge)](https://www.codefactor.io/repository/github/randomcoderorg/ubuntu-on-android)
+<p align="Center">
+<img src="https://www.codefactor.io/repository/github/randomcoderorg/ubuntu-on-android/badge">
+</p>
+
+
+<!-- ![Banner Image](.github/assets/banner.jpg "A Image on Ubuntu-on-android running mate desktop on smartphone") -->
+
+<h2 align="Center">Ubuntu-21.04 on android</h2>
+Ubuntu-on-android aims to run ubuntu with pre-installed Desktop Environment, development tools, and software on top of android without root with the help of proot in termux application. This project just like any other linux on android projects but with aim of making it easy for end user on setting up linux.
+
+[![Support Server](https://img.shields.io/discord/892727774828199976?color=blue&label=join%20%23udroid&logo=discord&logoColor=white&style=for-the-badge)](https://discord.gg/h7wZ9BfbU9)
+
+
 
 codename = `udroid`
 
