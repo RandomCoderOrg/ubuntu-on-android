@@ -98,7 +98,7 @@ function _NOTICE_()
 {
     if [ ! -f ~/.udroid_notice.lock ]; then
         touch ~/.udroid_notice.lock
-        shout "The Code name for this ubuntu is chaned from \"hippo\" to \"udroid\""
+        shout "The Code name for this ubuntu is changed from \"hippo\" to \"udroid\""
         sleep 5
     fi
 }
