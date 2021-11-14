@@ -158,7 +158,7 @@ function install()
     fi
 
     if [ -f "${CACHE_ROOT}"/ubuntu-on-android/udroid.sh ]; then
-        cp "${CACHE_ROOT}"/ubuntu-on-android/udroid.sh ${SCRIPT_DIR}
+        cp "${CACHE_ROOT}"/ubuntu-on-android/plugins/udroid.sh ${SCRIPT_DIR}
     fi
 
     if [ -f "${CACHE_ROOT}"/fs-manager-udroid/install.sh ]; then
