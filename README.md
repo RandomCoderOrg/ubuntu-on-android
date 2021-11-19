@@ -10,7 +10,7 @@
 <img src="https://www.codefactor.io/repository/github/randomcoderorg/ubuntu-on-android/badge">
 </p>
 
-<p href="https://visitorbadge.io/status?path=https%3A%2F%2Fgithub.com%2FRandomCoderOrg%2Fubuntu-on-android" align=center><img src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2FRandomCoderOrg%2Fubuntu-on-android&label=🥳VISITORS&labelColor=%23ffff00&countColor=%23263759" /><p>
+<p href="https://visitorbadge.io/status?path=https%3A%2F%2Fgithub.com%2FRandomCoderOrg%2Fubuntu-on-android" align=center><img src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2FRandomCoderOrg%2Fubuntu-on-android&label=%F0%9F%A5%B3VISITORS&labelColor=%23ffff00&countColor=%23263759" /><p>
 
 
 <!-- ![Banner Image](.github/assets/banner.jpg "A Image on Ubuntu-on-android running mate desktop on smartphone") -->
