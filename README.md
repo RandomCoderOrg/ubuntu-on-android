@@ -91,6 +91,7 @@ pulseaudio --start --load="module-native-protocol-tcp auth-ip-acl=127.0.0.1 auth
 ![image](src/images/three.png)
 ![image](src/images/two.png)
 ![image](src/images/one.png)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FRandomCoderOrg%2Fubuntu-on-android.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FRandomCoderOrg%2Fubuntu-on-android?ref=badge_shield)
 
 A small help from me if you want to build your own rootfs [wiki_page](https://github.com/RandomCoderOrg/ubuntu-on-android/wiki/commands-took-to-make-a-custom-rootfs)
 
@@ -108,3 +109,6 @@ Copyright (c) 2021 Saicharan Kandukuri
 <h2 align="center"> More Updates coming soon 💛</h2>
 
 - feel free to contribute to this repo :)
+
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FRandomCoderOrg%2Fubuntu-on-android.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FRandomCoderOrg%2Fubuntu-on-android?ref=badge_large)
