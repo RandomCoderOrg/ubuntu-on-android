@@ -32,6 +32,7 @@ codename = `udroid`
 | arm64 | ![stat](https://img.shields.io/badge/-installable-brightgreen) |
 | armv7l | ![stat](https://img.shields.io/badge/-installable-brightgreen) |
 | armv8l | ![stat](https://img.shields.io/badge/-partially%20supported-orange) |
+| amd64 | ![stat](https://img.shields.io/badge/-installable-brightgreen) |
 | Others | `not started` |
 
 ## Desclaimer
@@ -41,7 +42,7 @@ Just before starting the installation, you can check [this.](md/desclaimer.md)
 
 ```bash
 # download installer
-curl -L -o install.sh https://git.io/hippo-installer
+curl -L -o install.sh https://bit.ly/udroid-installer
 # run the installer
 bash install.sh
 # Install ubuntu with this command
@@ -52,18 +53,22 @@ for more see [here.](md/installation.md)
 
 ## Some Screenshots
 
-![image](.github/assets/IMG_20211014_084106.jpg)
-![image](.github/assets/four.png)
-![image](.github/assets/three.png)
+![udroid mate screenshot](.github/assets/IMG_20211014_084106.jpg)
+![udroid xfce4 running glxgers & vscode](.github/assets/four.png)
+![udroid xfce4 running libre draw](.github/assets/three.png)
 More can be found [here.](md/showcase.md)
 
 > for building custom linux tarballs go [here](https://github.com/RandomCoderOrg/fs-cook)
 
-## Devolopers & credits
+## Devolopers
 
-DEV #0 = [Saicharankandukuri](https://github.com/SaicharanKandukuri)
+<a href="https://github.com/RandomCoderOrg/ubuntu-on-android/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=RandomCoderOrg/ubuntu-on-android" />
+</a>
 
-Dev #1 = [Gxmersam](https://github.com/GxmerSam)
+> DEV #0 = [Saicharankandukuri](https://github.com/SaicharanKandukuri)
+>
+> Dev #1 = [Gxmersam](https://github.com/GxmerSam)
 
 ## Licence
 MIT
