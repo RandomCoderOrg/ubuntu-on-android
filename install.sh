@@ -172,7 +172,7 @@ function install()
      shout "setup complete...\nNow you can install and login with comand ${GREEN}udroid${DC} \nfor info use udroid --help"
      lshout "for additional documentation see: https://github.com/RandomCoderOrg/ubuntu-on-android#basic-usage"
      lshout "report issues and feature requests at: https://github.com/RandomCoderOrg/ubuntu-on-android/issues"
-     lshout "Join Our discord server: https://discord.gg/u7KDGUc3Aw"
+     lshout "Join Our discord server (Udroid): https://discord.gg/BmtHbY3z"
     exit 1
 
 }
