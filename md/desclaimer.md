@@ -3,7 +3,7 @@
 **A note before you try**
 - As lot of it is preinstalled you can login and start right after you install.
 - Before installation, be sure that you're on stable internet and your device have 5-6gb free space for neat installation.
-- As this runs on termux and on software rendering so performence clearly depends on CPU, ram and storage read-write speed!
+- As this runs on termux and on software rendering so performance clearly depends on CPU, ram and storage read-write speed!
 - Consider not to try heavy apps unless you got a good device.
 - If you have any issues or suggestions make sure i know at https://github.com/RandomCoderOrg/ubuntu-on-android/issue (create an issue)
 
