@@ -1,0 +1,20 @@
+repo:
+- '*'
+
+readme_update:
+- README.md
+
+md_docs:
+- md/*
+
+assets:
+- assets/*
+
+plugins:
+- pd-plugins/*
+
+installer:
+- install.sh
+
+credits:
+- credits.json
