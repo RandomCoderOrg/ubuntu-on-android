@@ -1,8 +1,8 @@
 <p align="Center">
-<img src=".github/assets/udroid_logo.png" height="300" >
+<img src="assets/udroid_logo.png" height="300" >
 </p>
 <p align="Center">
-<img src=".github/assets/badge-bash.svg">
+<img src="assets/badge-bash.svg">
 <img src="https://badges.frapsoft.com/os/v1/open-source.svg?v=103">
 </p>
 
@@ -13,7 +13,7 @@
 <p href="https://visitorbadge.io/status?path=https%3A%2F%2Fgithub.com%2FRandomCoderOrg%2Fubuntu-on-android" align=center><img src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2FRandomCoderOrg%2Fubuntu-on-android&label=%F0%9F%A5%B3VISITORS&labelColor=%23ffff00&countColor=%23263759" /><p>
 
 
-<!-- ![Banner Image](.github/assets/banner.jpg "A Image on Ubuntu-on-android running mate desktop on smartphone") -->
+<!-- ![Banner Image](assets/banner.jpg "A Image on Ubuntu-on-android running mate desktop on smartphone") -->
 
 <h2 align="Center">Ubuntu-21.04 on android</h2>
 Ubuntu-on-android aims to run ubuntu with pre-installed Desktop Environment, development tools, and software on top of android without root with the help of proot in termux application. This project just like any other linux on android projects but with aim of making it easy for end user on setting up linux.
@@ -53,9 +53,9 @@ for more see [here.](md/installation.md)
 
 ## Some Screenshots
 
-![udroid mate screenshot](.github/assets/IMG_20211014_084106.jpg)
-![udroid xfce4 running glxgers & vscode](.github/assets/four.png)
-![udroid xfce4 running libre draw](.github/assets/three.png)
+![udroid mate screenshot](assets/IMG_20211014_084106.jpg)
+![udroid xfce4 running glxgers & vscode](assets/four.png)
+![udroid xfce4 running libre draw](assets/three.png)
 More can be found [here.](md/showcase.md)
 
 > for building custom linux tarballs go [here](https://github.com/RandomCoderOrg/fs-cook)
