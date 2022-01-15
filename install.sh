@@ -6,8 +6,8 @@
 # Copyright (c) 2021 Saicharan Kandukuri <hello.1x1.sai@gmail.com>
 
 
-version="01"
-version_code_name="mad installer mi01"
+version="03"
+version_code_name="mi02"
 installer_authors="saicharankandukuri"
 
 # * Deafault color is Blue
@@ -69,11 +69,11 @@ DEPENDS="proot-distro pulseaudio git"
 # shout()   pring messege in a good way with some lines
 # lshout()  print messege in a standard way
 
-die    () { echo -e "${RED}!!: ${*}${RST}";exit 1 ;:;}
-warn   () { echo -e "${RED}??: ${*}${RST}";:;}
-shout  () { echo -e "${DC}-----";echo -e "${*}";echo -e "-----${RST}";:; }
-lshout () { echo -e "${DC}${*}${RST}";:; }
-
+die()    { echo -e "${_c_red}[E] ${*}${RST}";exit 1;:;}
+warn()   { echo -e "${_c_red}[W] ${*}${RST}";:;}
+shout()  { echo -e "${_c_blue}[-] ${*}${RST}";:;}
+lshout() { echo -e "${_c_blue}-> ${*}${RST}";:;}
+msg()    { echo -e "${*} \e[0m" >&2;:;}
 
 shout "\e[1;32m Udroid Installer v${version} ${version_code_name} \n by ${installer_authors}"
 sleep 2
