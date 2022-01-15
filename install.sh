@@ -17,15 +17,6 @@ GREEN="\e[1;32m"
 BLUE="\e[34m"
 DC=${BLUE}
 
-#GREEN_THIN="\e[32m"
-
-# * Used for testing
-# if set then installer clones code from specified branch (sensitive)
-if [ -n "$HIPPO_BRANCH" ]; then
-    BRANCH="$HIPPO_BRANCH"
-fi
-
-
 # CACHE_ROOT is the place where are download caches are stored
 CACHE_ROOT="${HOME}/.uoa-cache-root"
 
