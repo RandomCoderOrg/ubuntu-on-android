@@ -11,11 +11,11 @@ version_code_name="mi02"
 installer_authors="saicharankandukuri"
 
 # * Deafault color is Blue
+_c_magneta="\e[95m"
+_c_green="\e[32m"
+_c_red="\e[31m"
+_c_blue="\e[34m"
 RST="\e[0m"
-RED="\e[1;31m" # *This is bold
-GREEN="\e[1;32m"
-BLUE="\e[34m"
-DC=${BLUE}
 
 # CACHE_ROOT is the place where are download caches are stored
 CACHE_ROOT="${HOME}/.uoa-cache-root"
@@ -28,28 +28,28 @@ TPREFIX="/data/data/com.termux/files"
 BIN_DIR="${TPREFIX}/usr/bin"
 
 # INSTALL_FOLDER variable points to folder location where the file systems are installed in proot-distro
-# * used when checking for hippo
+# * used when checking for udroid
 INSTALL_FOLDER="${TPREFIX}/usr/var/lib/proot-distro/installed-rootfs"
 
-# UDROID_DIR variable points to folder where hippo root filesystem is in
+# UDROID_DIR variable points to folder where udroid root filesystem is in
 UDROID_DIR="${INSTALL_FOLDER}/udroid"
 
 # SCRIPT_DIR variable points to folder where plugins for proot-distro is stored
-# * this is where hippo.sh plugin goes
+# * this is where udroid.sh plugin goes
 
 SCRIPT_DIR="${TPREFIX}/usr/etc/proot-distro/"
 
-# HIPPO_REPO_URL & FSM_URL are github repo urls later used to clone the code
-HIPPO_REPO_URL="https://github.com/RandomCoderOrg/ubuntu-on-android"
+# UDROID_REPO_URL & FSM_URL are github repo urls later used to clone the code
+UDROID_REPO_URL="https://github.com/RandomCoderOrg/ubuntu-on-android"
 FSM_URL="https://github.com/RandomCoderOrg/fs-manager-udroid"
 
 # DEPENDS programs required to run Hippo
 # * proot-distro - A proot manager tool
-#                  (which starts hippo)
+#                  (which starts udroid)
 # * git          - the stupid content tracker
 #                  (used to copy code from github repo)
 # * pulseaudo    - PulseAudio is a networked low-latency sound server for Linux
-#                  (which is used to get audio from hippo using moudle-tcp*)
+#                  (which is used to get audio from udroid using moudle-tcp*)
 # * Others dependencies like tar comes pre-loaded in termux so no need to mention
 DEPENDS="proot-distro pulseaudio git"
 
@@ -82,7 +82,7 @@ esac
 #
 # 1. install required programs
 # 2. remove previous cache if found
-# 3. clone code from links in HIPPO_REPO_URL & FSM_URL
+# 3. clone code from links in UDROID_REPO_URL & FSM_URL
 # 4. call install function
 # if anything goes wrong or any program in code fails kill the installation by calling die function
 
@@ -90,7 +90,7 @@ function _NOTICE_()
 {
     if [ ! -f ~/.udroid_notice.lock ]; then
         touch ~/.udroid_notice.lock
-        shout "The Code name for this ubuntu is chaned from \"hippo\" to \"udroid\""
+        shout "The Code name for this ubuntu is chaned from \"udroid\" to \"udroid\""
         sleep 5
     fi
 }
@@ -119,10 +119,10 @@ function setup_and_clone()
 
     shout "Cloning code from Github........."
     if [ -n "${BRANCH}" ]; then
-        git clone -b "${BRANCH}" ${HIPPO_REPO_URL} "${CACHE_ROOT}/ubuntu-on-android" || die "failed to clone repo ubuntu-on-android.."
+        git clone -b "${BRANCH}" ${UDROID_REPO_URL} "${CACHE_ROOT}/ubuntu-on-android" || die "failed to clone repo ubuntu-on-android.."
         git clone -b "${BRANCH}" ${FSM_URL} "${CACHE_ROOT}/fs-manager-udroid" || die "failed to clone repo fs-manager-udroid"
     else
-        git clone ${HIPPO_REPO_URL} "${CACHE_ROOT}/ubuntu-on-android" || die "failed to clone repo ubuntu-on-android \"${BRANCH}\""
+        git clone ${UDROID_REPO_URL} "${CACHE_ROOT}/ubuntu-on-android" || die "failed to clone repo ubuntu-on-android \"${BRANCH}\""
         git clone ${FSM_URL} "${CACHE_ROOT}/fs-manager-udroid" || die "failed to clone repo fs-manager-udroid \"${BRANCH}\""
     fi
     lshout "Done..."
@@ -133,8 +133,8 @@ function setup_and_clone()
 # * function install
 #
 # 1. chech for plugin and copy to proot-distro plugin folder
-# 2. chech for fs-manager-udroid(hippo) install script in its root directory and run it
-# 3. trigger hippo installation
+# 2. chech for fs-manager-udroid(udroid) install script in its root directory and run it
+# 3. trigger udroid installation
 # 4. show echo of installation complete and clear screen
 # if anything goes wrong or any program in code fails kill the installation by calling die function
 
@@ -160,11 +160,8 @@ function install()
     fi
 
 
-    shout "setup complete...\nNow you can install and login with comand ${GREEN}udroid${DC} \nfor info use udroid --help"
-    lshout "for additional documentation see: https://github.com/RandomCoderOrg/ubuntu-on-android#basic-usage"
-    lshout "report issues and feature requests at: https://github.com/RandomCoderOrg/ubuntu-on-android/issues"
-    lshout "Join Our discord server: https://discord.gg/AGqQCHuE6S"
-
+    shout "setup complete..."
+    lshout "Now you can login to udroid with ${c_green}udroid -l $suite${RST}"
 }
 
 _NOTICE_
