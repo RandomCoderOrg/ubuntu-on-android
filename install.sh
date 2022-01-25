@@ -18,7 +18,7 @@ _c_blue="\e[34m"
 RST="\e[0m"
 
 # CACHE_ROOT is the place where are download caches are stored
-CACHE_ROOT="${HOME}/.uoa-cache-root"
+CACHE_ROOT="${HOME}/.udroid-cache-root"
 
 # TPREFIX where root of termux starts
 TPREFIX="/data/data/com.termux/files"
