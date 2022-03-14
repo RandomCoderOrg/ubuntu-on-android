@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 DISTRO_NAME="jammy"
-DISTRO_COMMENT="A ubuntu 22.04 port by udroid"
+DISTRO_COMMENT="A ubuntu Jammy 22.04 port by udroid"
 
 TARBALL_STRIP_OPT=0
 
