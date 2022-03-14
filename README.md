@@ -43,47 +43,25 @@ A note before you try
 | amd64 | ![stat](https://img.shields.io/badge/-work%20in%20progress-blue) |
 | Others | `not started` |
 
-# Installation
-- First install termux from [termux.com](https://termux.com) or [F-Droid!](https://f-droid.org/en/packages/com.termux/)
+## Desclaimer
+Just before starting the installation, you can check [this.](md/desclaimer.md)
 
-## Getting Sources and install scripts
+## Installation
+
 ```bash
 # download installer
 curl -L -o install.sh https://bit.ly/udroid-installer
 # run the installer
 bash install.sh
-# Install ubuntu with this command
-udroid --install
+# Install udroid xfce4 with this command
+udroid -i xfce4
+# Login to xfce4
+udroid -l xfce4
 ```
-### Basic Usage
-  | **Command**        | **Usage** |
-  |--------------------|-----------|
-  | `udroid`            | To login to shell |
-  |  `udroid upgrade` | to upgrade fs or to get new features if available |
-  | `startvnc`   | start vncserver at port `1` (you can change default port by exporting env varaible `DEFAULT_VNC_PORT` to a port number) |
-  | `udroid stopvnc`    | stop vncserver at given or default port `1`
-  | `udroid --enable-dbus` | To start udroid with dbus hack enabled |
-  | `udroid --enable-dbus-vnc` | To start vnc session with dbus hack enabled |
 
-## Environment Variables
-- `DEFAULT_VNC_PORT` to set vnc port for scripts
-- `HIPPO_BRANCH` to set custom branch for cloning code
+for more see [here.](md/installation.md)
 
-## 🔊  Audio 
-pulseaudio starts everytime you invoke start commands with `udroid`
-
-> You can start audio manually with this command
-```bash
-pulseaudio --start --load="module-native-protocol-tcp auth-ip-acl=127.0.0.1 auth-anonymous=1" --exit-idle-time=-1
-```
-## Default passwords
-
-|  |password|
-|--|--------|
-| udroid user | `secret` |
-|vncserver root | `secret` |
-
-## some Screenshots
+## Some Screenshots
 
 ![image](src/images/six.png)
 ![image](src/images/five.png)
@@ -93,22 +71,20 @@ pulseaudio --start --load="module-native-protocol-tcp auth-ip-acl=127.0.0.1 auth
 ![image](src/images/one.png)
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FRandomCoderOrg%2Fubuntu-on-android.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FRandomCoderOrg%2Fubuntu-on-android?ref=badge_shield)
 
-A small help from me if you want to build your own rootfs [wiki_page](https://github.com/RandomCoderOrg/ubuntu-on-android/wiki/commands-took-to-make-a-custom-rootfs)
+> for building custom linux tarballs go [here](https://github.com/RandomCoderOrg/fs-cook)
 
-# Devolopers & credits
-Made with ❤️ from:
+## Devolopers
 
-DEV #0 -> [Saicharankandukuri](https://github.com/SaicharanKandukuri)
+<a href="https://github.com/RandomCoderOrg/ubuntu-on-android/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=RandomCoderOrg/ubuntu-on-android" />
+</a>
 
-Dev #1 -> [Gxmersam](https://github.com/GxmerSam)
+> DEV #0 = [Saicharankandukuri](https://github.com/SaicharanKandukuri)
+>
+> Dev #1 = [Gxmersam](https://github.com/GxmerSam)
 
-# Licence
+## Licence
 MIT
 Copyright (c) 2021 Saicharan Kandukuri
 
-<h2 align="center"> More Updates coming soon 💛</h2>
-
-- feel free to contribute to this repo :)
-
-
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FRandomCoderOrg%2Fubuntu-on-android.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FRandomCoderOrg%2Fubuntu-on-android?ref=badge_large)
+###### feel free to contribute to this repo🤍.
