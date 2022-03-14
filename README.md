@@ -32,7 +32,7 @@ codename = `udroid`
 | arm64 | ![stat](https://img.shields.io/badge/-installable-brightgreen) |
 | armv7l | ![stat](https://img.shields.io/badge/-installable-brightgreen) |
 | armv8l | ![stat](https://img.shields.io/badge/-partially%20supported-orange) |
-| amd64 | ![stat](https://img.shields.io/badge/-installable-brightgreen) |
+| amd64 | ![stat](https://img.shields.io/badge/-work%20in%20progress-blue) |
 | Others | `not started` |
 
 ## Desclaimer
