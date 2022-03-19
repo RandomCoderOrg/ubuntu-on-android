@@ -16,6 +16,6 @@ jobs:
         token: ${{ secrets.METRICS_TOKEN }}
         base: ""
         template: repository
-        repo: metrics
+        repo: RandomCoderOrg/ubuntu-on-android
         plugin_people: yes
         plugin_people_types: contributors, stargazers, watchers
