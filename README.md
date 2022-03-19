@@ -61,15 +61,10 @@ More can be found [here.](md/showcase.md)
 
 > for building custom linux tarballs go [here](https://github.com/RandomCoderOrg/fs-cook)
 
-## Devolopers
+## Runs-On
+![People](metrics.plugin.people.repository.svg)
 
-<a href="https://github.com/RandomCoderOrg/ubuntu-on-android/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=RandomCoderOrg/ubuntu-on-android" />
-</a>
-
-> DEV #0 = [Saicharankandukuri](https://github.com/SaicharanKandukuri)
->
-> Dev #1 = [Gxmersam](https://github.com/GxmerSam)
+> these people are fuel for this project
 
 ## Licence
 MIT
