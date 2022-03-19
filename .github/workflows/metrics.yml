@@ -1,0 +1,22 @@
+# Visit https://github.com/lowlighter/metrics/blob/master/action.yml for full reference
+name: Metrics
+on:
+  schedule: [{cron: "0 0 * * *"}]
+  # Lines below let you run workflow manually and on each commit
+  workflow_dispatch:
+  push:
+jobs:
+  github-metrics:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Contributors Stargazers
+      uses: lowlighter/metrics@latest
+      with:
+        filename: metrics.plugin.people.repository.svg
+        token: ${{ secrets.METRICS_TOKEN }}
+        base: ""
+        template: repository
+        user: RandomCoderOrg
+        repo: ubuntu-on-android
+        plugin_people: yes
+        plugin_people_types: contributors, stargazers, watchers
