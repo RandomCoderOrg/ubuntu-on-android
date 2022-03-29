@@ -1,2 +1,2 @@
-suite="impish"
+suite="udroid-impish"
 avalibe_varients=("mate" "xfce4" "raw")

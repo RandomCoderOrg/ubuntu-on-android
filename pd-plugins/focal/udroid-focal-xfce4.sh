@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 DISTRO_NAME="udroid"
-DISTRO_COMMENT="A ubuntu 21.04 port with some tweaks xfce4"
+DISTRO_COMMENT="A ubuntu 20.04 port with some tweaks xfce4"
 
 TARBALL_STRIP_OPT=0
 
