@@ -23,9 +23,11 @@ lshout() { echo -e "${_c_blue}-> ${*}${RST}";:;}
 msg()    { echo -e "${*} \e[0m" >&2;:;}
 
 function logo() {
+    # check if logo could fit in terminal with its current tty resolution
     tty_width=$(stty size | cut -d ' ' -f 2)
 
     if ((tty_width >= 50 )); then
+        # RES [W X H]: 44X10 ( BEST visible FIT: 50X15 )
         msg "████████████████████████████████████████████"
         echo
         msg "██╗░░░██╗██████╗░██████╗░░█████╗░██╗██████╗░"
@@ -37,6 +39,7 @@ function logo() {
         echo
         msg "████████████ (c)RandomCoderOrg ████████████"
     else
+        # Just in case the logo is too big for your terminal ( Happens to new termux users )
         msg "${_c_magneta}UDROID INSTALLER v$version\e[0m...."
         msg "\e[90m© RandomCoderOrg"
     fi
