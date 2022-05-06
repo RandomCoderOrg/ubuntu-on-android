@@ -30,13 +30,13 @@ codename = `udroid`
 
 | Distribution  | XFCE4 | MATE | RAW |
 |-------------- |------|------|-----|
-| Ubuntu Impish (21.10) |   ✔  |   ✔  |    ✔ |
 | Ubuntu hirsute (21.04)|   ✔  |   X   |   ✔  | 
 | Ubuntu focal (20.04) |    ✔ |    X   |   ✔ |
 
 ### Early Release
 | Distribution  | XFCE4 | MATE | RAW |
 |-------------- |------|------|-----|
+| Ubuntu Impish (21.10) |   ✔  |   ✔  |    ✔ |
 | Ubuntu Jammy (22.04) | - | - | ✔ |
 | Ubuntu Kinetic (22.10) | - | - | - |
 
