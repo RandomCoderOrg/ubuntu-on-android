@@ -44,8 +44,8 @@ codename = `udroid`
 | arch  | status |
 |------ |--------|
 | arm64 | ![stat](https://img.shields.io/badge/-installable-brightgreen) |
-| armv7l | ![stat](https://img.shields.io/badge/-installable-brightgreen) |
-| armv8l | ![stat](https://img.shields.io/badge/-partially%20supported-orange) |
+| armv7l | ![stat](https://img.shields.io/badge/-partially%20supported-orange) |
+| armv8l | ![stat](https://img.shields.io/badge/-installable-brightgreen) |
 | amd64 | [![stat](https://img.shields.io/badge/-installable%20In%20Beta-brightgreen)](https://github.com/RandomCoderOrg/ubuntu-on-android/releases/tag/v3) |
 | Others | `not started` |
 
