@@ -2,8 +2,7 @@
 
 DISTRO_NAME="udroid"
 DISTRO_COMMENT="Ubuntu 22.10 Jammy"
-
-# https://github.com/RandomCoderOrg/fs-cook/releases/download/v1.4/kinetic-raw-amd64.tar.gz
+TARBALL_STRIP_OPT=0
 
 TARBALL_URL['aarch64']="https://github.com/RandomCoderOrg/fs-cook/releases/download/v1.4/kinetic-raw-arm64.tar.gz"
 TARBALL_SHA256['aarch64']="9839aa717729f323942bec517a760cc1631428be730554c3b589b4d0b0cf26f1"
