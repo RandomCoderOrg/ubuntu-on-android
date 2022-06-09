@@ -1,0 +1,4 @@
+[submodule "udroid-extra-tool-proot"]
+	path = udroid-extra-tool-proot
+	url = https://github.com/RandomCoderOrg/udroid-extra-tool-proot
+	branch = main
