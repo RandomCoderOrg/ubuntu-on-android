@@ -2,3 +2,7 @@
 	path = udroid-extra-tool-proot
 	url = https://github.com/RandomCoderOrg/udroid-extra-tool-proot
 	branch = main
+[submodule "udroid-fsmanager-scripts"]
+	path = udroid-fsmanager-scripts
+	url = https://github.com/RandomCoderOrg/fs-manager-udroid
+	branch = main
