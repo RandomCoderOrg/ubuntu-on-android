@@ -38,7 +38,7 @@ codename = `udroid`
 |-------------- |------|------|-----|
 | [Ubuntu Impish (21.10)](https://udroid-rc.gitbook.io/udroid-wiki/suites/ubuntu-21.10) |   ✔  |   ✔  |    ✔ |
 | [Ubuntu Jammy (22.04)](https://udroid-rc.gitbook.io/udroid-wiki/suites/ubuntu-22.04) | - | - | ✔ |
-| [Ubuntu Kinetic (22.10)](https://udroid-rc.gitbook.io/udroid-wiki/suites/ubuntu-22.10) | - | - | - |
+| [Ubuntu Kinetic (22.10)](https://udroid-rc.gitbook.io/udroid-wiki/suites/ubuntu-22.10) | - | - | ✔ |
 
 ### Arch support
 | arch  | status |
