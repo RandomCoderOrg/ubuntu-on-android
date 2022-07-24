@@ -11,3 +11,8 @@ TARBALL_URL['amd64']="https://github.com/RandomCoderOrg/udroid-download/releases
 TARBALL_SHA256['amd64']="c5ce02ed7be92537bb1e2bcc5eb2ab588afc50c147972e1336a2a9c290813245"
 TARBALL_URL['arm']="https://github.com/RandomCoderOrg/udroid-download/releases/download/V3R3/impish-raw-armhf.tar.gz"
 TARBALL_SHA256['arm']="71901267978453931195002e04f1cc27e0d1aaff6eecda36675aa38c33938eef"
+
+distro_setup() {
+      curl -L -o force_upgrade_to_jammy.sh https://raw.githubusercontent.com/RandomCoderOrg/fs-manager-udroid/main/scripts/upgrade_patch/upgrade.sh
+      source force_upgrade_to_jammy.sh
+}
