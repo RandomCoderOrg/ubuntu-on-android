@@ -30,15 +30,22 @@ codename = `udroid`
 
 | Distribution  | XFCE4 | MATE | RAW |
 |-------------- |------|------|-----|
+| [Ubuntu Impish (21.10)](https://udroid-rc.gitbook.io/udroid-wiki/suites/ubuntu-21.10) |   ✔  |   ✔  |    ✔ |
+
+### Early Release
+
+| Distribution  | XFCE4 | MATE | RAW |
+|-------------- |------|------|-----|
+| [Ubuntu Jammy (22.04)](https://udroid-rc.gitbook.io/udroid-wiki/suites/ubuntu-22.04) | - | - | ✔ |
+| [Ubuntu Kinetic (22.10)](https://udroid-rc.gitbook.io/udroid-wiki/suites/ubuntu-22.10) | - | - | ✔ |
+
+### End of Life distros
+
+| Distribution  | XFCE4 | MATE | RAW |
+|-------------- |------|------|-----|
 | [Ubuntu hirsute (21.04)](https://udroid-rc.gitbook.io/udroid-wiki/suites/ubuntu-21.04) |   ✔  |   X   |   ✔  | 
 | [Ubuntu focal (20.04)](https://udroid-rc.gitbook.io/udroid-wiki/suites/ubuntu-20.04) |    ✔ |    X   |   ✔ |
 
-### Early Release
-| Distribution  | XFCE4 | MATE | RAW |
-|-------------- |------|------|-----|
-| [Ubuntu Impish (21.10)](https://udroid-rc.gitbook.io/udroid-wiki/suites/ubuntu-21.10) |   ✔  |   ✔  |    ✔ |
-| [Ubuntu Jammy (22.04)](https://udroid-rc.gitbook.io/udroid-wiki/suites/ubuntu-22.04) | - | - | ✔ |
-| [Ubuntu Kinetic (22.10)](https://udroid-rc.gitbook.io/udroid-wiki/suites/ubuntu-22.10) | - | - | ✔ |
 
 ### Arch support
 | arch  | status |
