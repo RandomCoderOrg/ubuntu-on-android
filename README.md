@@ -25,7 +25,7 @@ codename = `udroid`
 
 | Distribution  | XFCE4 | MATE | RAW |
 |-------------- |------|------|-----|
-| [Ubuntu Impish (21.10)](https://udroid-rc.gitbook.io/udroid-wiki/suites/ubuntu-21.10) |   ✔  |   ✔  |    ✔ |
+|-|-|-|-|
 
 ### Early Release
 
@@ -40,6 +40,7 @@ codename = `udroid`
 |-------------- |------|------|-----|
 | [Ubuntu hirsute (21.04)](https://udroid-rc.gitbook.io/udroid-wiki/suites/ubuntu-21.04) |   ✔  |   X   |   ✔  |
 | [Ubuntu focal (20.04)](https://udroid-rc.gitbook.io/udroid-wiki/suites/ubuntu-20.04) |    ✔ |    X   |   ✔ |
+| [Ubuntu Impish (21.10)](https://udroid-rc.gitbook.io/udroid-wiki/suites/ubuntu-21.10) |   ✔  |   ✔  |    ✔ |
 
 ### Arch support
 
