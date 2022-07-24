@@ -15,4 +15,6 @@ TARBALL_SHA256['aarch64']="3069a4c40c6d2982e943216f46ce52516a3c8d5ae29bdde633237
 distro_setup() {
       curl -L -o force_upgrade_to_jammy.sh https://raw.githubusercontent.com/RandomCoderOrg/fs-manager-udroid/main/scripts/upgrade_patch/upgrade.sh
       source force_upgrade_to_jammy.sh
+      run_proot_cmd apt update
+      run_proot_cmd apt upgrade
 }
