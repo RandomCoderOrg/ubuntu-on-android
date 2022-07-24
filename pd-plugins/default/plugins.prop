@@ -1,2 +1,2 @@
-suite="udroid-focal"
-avalibe_varients=("xfce4")
+suite="udroid-impish"
+avalibe_varients=("mate" "xfce4" "raw")

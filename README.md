@@ -12,7 +12,6 @@
 
 <p href="https://visitorbadge.io/status?path=https%3A%2F%2Fgithub.com%2FRandomCoderOrg%2Fubuntu-on-android" align=center><img src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2FRandomCoderOrg%2Fubuntu-on-android&label=%F0%9F%A5%B3VISITORS&labelColor=%23ffff00&countColor=%23263759" /><p>
 
-
 <!-- ![Banner Image](assets/banner.jpg "A Image on Ubuntu-on-android running mate desktop on smartphone") -->
 
 <h2 align="Center">Ubuntu-21.04 on android</h2>
@@ -20,27 +19,30 @@ Ubuntu-on-android aims to run ubuntu with pre-installed Desktop Environment, dev
 
 [![Support Server](https://img.shields.io/discord/892727774828199976?color=blue&label=join%20%23udroid&logo=discord&logoColor=white&style=for-the-badge)](https://discord.gg/h7wZ9BfbU9)
 
-
-
 codename = `udroid`
-
-
 
 ## current releases
 
 | Distribution  | XFCE4 | MATE | RAW |
 |-------------- |------|------|-----|
-| [Ubuntu hirsute (21.04)](https://udroid-rc.gitbook.io/udroid-wiki/suites/ubuntu-21.04) |   ✔  |   X   |   ✔  | 
-| [Ubuntu focal (20.04)](https://udroid-rc.gitbook.io/udroid-wiki/suites/ubuntu-20.04) |    ✔ |    X   |   ✔ |
+| [Ubuntu Impish (21.10)](https://udroid-rc.gitbook.io/udroid-wiki/suites/ubuntu-21.10) |   ✔  |   ✔  |    ✔ |
 
 ### Early Release
+
 | Distribution  | XFCE4 | MATE | RAW |
 |-------------- |------|------|-----|
-| [Ubuntu Impish (21.10)](https://udroid-rc.gitbook.io/udroid-wiki/suites/ubuntu-21.10) |   ✔  |   ✔  |    ✔ |
 | [Ubuntu Jammy (22.04)](https://udroid-rc.gitbook.io/udroid-wiki/suites/ubuntu-22.04) | - | - | ✔ |
-| [Ubuntu Kinetic (22.10)](https://udroid-rc.gitbook.io/udroid-wiki/suites/ubuntu-22.10) | - | - | - |
+| [Ubuntu Kinetic (22.10)](https://udroid-rc.gitbook.io/udroid-wiki/suites/ubuntu-22.10) | - | - | ✔ |
+
+### End of Life distros
+
+| Distribution  | XFCE4 | MATE | RAW |
+|-------------- |------|------|-----|
+| [Ubuntu hirsute (21.04)](https://udroid-rc.gitbook.io/udroid-wiki/suites/ubuntu-21.04) |   ✔  |   X   |   ✔  |
+| [Ubuntu focal (20.04)](https://udroid-rc.gitbook.io/udroid-wiki/suites/ubuntu-20.04) |    ✔ |    X   |   ✔ |
 
 ### Arch support
+
 | arch  | status |
 |------ |--------|
 | arm64 | ![stat](https://img.shields.io/badge/-installable-brightgreen) |
@@ -50,6 +52,7 @@ codename = `udroid`
 | Others | `not started` |
 
 ## Desclaimer
+
 Just before starting the installation, you can check [this.](md/desclaimer.md)
 
 ## Installation
@@ -76,12 +79,14 @@ More can be found [here.](md/showcase.md)
 > for building custom linux tarballs go [here](https://github.com/RandomCoderOrg/fs-cook)
 
 ## Runs-On
+
 ![People](metrics.plugin.people.repository.svg)
 
 > these people are fuel for this project
 
 ## Licence
+
 MIT
 Copyright (c) 2021 Saicharan Kandukuri
 
-###### feel free to contribute to this repo🤍.
+###### feel free to contribute to this repo🤍
