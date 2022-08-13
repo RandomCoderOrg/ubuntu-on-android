@@ -13,7 +13,14 @@ TARBALL_SHA256['x86_64']="88a5f5f079aef994b6d5b2e3df773aa875ed2157d1f00c8fda504b
 distro_setup() {
       curl -L -o force_upgrade_to_jammy.sh https://raw.githubusercontent.com/RandomCoderOrg/fs-manager-udroid/main/scripts/upgrade_patch/upgrade.sh
       source force_upgrade_to_jammy.sh
+      echo "[2/4] starting update for apt indexes.."
       run_proot_cmd apt update
-      run_proot_cmd apt upgrade
-}
+      echo "[3/4] fixing broken packages.."
+      run_proot_cmd apt remove libwcom-common -y
+      echo "[4/4] starting full upgrade.."
+      run_proot_cmd apt upgrade -y
+      run_proot_cmd apt clean
 
+      echo "[ UPGRADE DONE ]"
+      sleep 2
+}
