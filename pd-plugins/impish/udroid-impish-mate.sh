@@ -18,7 +18,7 @@ distro_setup() {
       echo "[2/4] starting update for apt indexes.."
       run_proot_cmd apt update
       echo "[3/4] fixing broken packages.."
-      run_proot_cmd apt remove libwcom-common -y
+      run_proot_cmd apt remove libwacom-common -y
       echo "[4/4] starting full upgrade.."
       run_proot_cmd apt upgrade -y
       run_proot_cmd apt clean
