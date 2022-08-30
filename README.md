@@ -52,7 +52,7 @@ codename = `udroid`
 | amd64 | [![stat](https://img.shields.io/badge/-installable%20In%20Beta-brightgreen)](https://github.com/RandomCoderOrg/ubuntu-on-android/releases/tag/v3) |
 | Others | `not started` |
 
-## Desclaimer
+## Disclaimer
 
 Just before starting the installation, you can check [this.](md/desclaimer.md)
 
