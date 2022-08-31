@@ -18,9 +18,11 @@ distro_setup() {
       echo "[3/4] fixing broken packages.."
       run_proot_cmd apt remove libwacom-common -y
       echo "[4/4] starting full upgrade.."
-      run_proot_cmd apt upgrade -y
+      run_proot_cmd apt full-upgrade -y
       run_proot_cmd apt clean
+      rm -rf force_upgrade_to_jammy.sh
 
       echo "[ UPGRADE DONE ]"
       sleep 2
 }
+
