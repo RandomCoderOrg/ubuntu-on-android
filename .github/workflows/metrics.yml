@@ -21,5 +21,5 @@ jobs:
         user: RandomCoderOrg
         repo: ubuntu-on-android
         plugin_people: yes
-        plugin_people_limit: 2000
+        plugin_people_limit: 30
         plugin_people_types: contributors, stargazers, watchers
