@@ -1,3 +1,7 @@
+<div align="center">
+
+> ⚠️**UNDER MAINTAINENCE & REVAMP**
+</div>
 <p align="Center">
 <img src="assets/udroid_logo.png" height="300" >
 </p>
