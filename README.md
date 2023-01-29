@@ -53,7 +53,7 @@ Just before starting the installation, you can check [this.](md/desclaimer.md)
 ## Installation
 
 ```bash
-. <(curl -Ls https://raw.githubusercontent.com/RandomCoderOrg/ubuntu-on-android/maintenance/install.sh)
+. <(curl -Ls https://raw.githubusercontent.com/RandomCoderOrg/ubuntu-on-android/maintainence/install.sh)
 ```
 
 for more see [here.](md/installation.md)
