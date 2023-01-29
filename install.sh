@@ -107,7 +107,7 @@ bash install.sh || {
 
 
 ## finally install a good stable distro
-lshot "Installing $CUR_BEST_DISTRO in 3 seconds.."
+lshout "Installing $CUR_BEST_DISTRO in 3 seconds.."
 sleep 3
 udroid install $CUR_BEST_DISTRO || {
     die "Failed to install $CUR_BEST_DISTRO"
