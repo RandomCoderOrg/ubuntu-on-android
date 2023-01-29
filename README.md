@@ -85,7 +85,7 @@ More can be found [here.](md/showcase.md)
 
 ## Runs-On
 
-![People](metrics.plugin.people.repository.svg)
+![People](https://raw.githubusercontent.com/RandomCoderOrg/misc-worflows/main/metrics.plugin.people.repository.svg)
 
 > these people are fuel for this project
 
