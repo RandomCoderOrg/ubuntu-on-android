@@ -2,7 +2,7 @@
 
 </div>
 <p align="Center">
-<img src="assets/udroid_logo.png" height="300" >
+<img src="assets/udroid-logo.png" height="300" >
 </p>
 <p align="Center">
 <img src="assets/badge-bash.svg">
@@ -20,7 +20,9 @@
 <h2 align="Center">Ubuntu on android</h2>
 Ubuntu-on-android aims to run ubuntu with pre-installed Desktop Environment, development tools, and software on top of android without root with the help of proot in termux application. This project just like any other linux on android projects but with aim of making it easy for end user on setting up linux.
 
+
 [![Support Server](https://img.shields.io/discord/892727774828199976?color=blue&label=join%20%23udroid&logo=discord&logoColor=white&style=for-the-badge)](https://discord.gg/h7wZ9BfbU9)
+
 
 codename = `udroid`
 
