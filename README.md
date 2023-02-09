@@ -1,6 +1,5 @@
 <div align="center">
 
-> ⚠️**UNDER MAINTAINENCE & REVAMP**
 </div>
 <p align="Center">
 <img src="assets/udroid_logo.png" height="300" >
@@ -18,12 +17,32 @@
 
 <!-- ![Banner Image](assets/banner.jpg "A Image on Ubuntu-on-android running mate desktop on smartphone") -->
 
-<h2 align="Center">Ubuntu-22.04 on android</h2>
+<h2 align="Center">Ubuntu on android</h2>
 Ubuntu-on-android aims to run ubuntu with pre-installed Desktop Environment, development tools, and software on top of android without root with the help of proot in termux application. This project just like any other linux on android projects but with aim of making it easy for end user on setting up linux.
 
 [![Support Server](https://img.shields.io/discord/892727774828199976?color=blue&label=join%20%23udroid&logo=discord&logoColor=white&style=for-the-badge)](https://discord.gg/h7wZ9BfbU9)
 
 codename = `udroid`
+
+## Installation
+
+To install current stable release of `udroid` filesystem run
+
+```bash
+. <(curl -Ls https://bit.ly/udroid-installer)
+```
+
+### or
+
+```bash
+git clone https://github.com/RandomCoderOrg/fs-manager-udroid
+cd fs-manager-udroid
+bash install.sh
+udroid install jammy:xfce4
+```
+
+for advanced usage -> [udroid cli README](https://github.com/RandomCoderOrg/fs-manager-udroid/blob/main/README.md) OR [Wiki Page](https://udroid-rc.gitbook.io/udroid-wiki/udroid-landing/quick-installation-and-usage)
+
 
 ## current releases
 
@@ -35,9 +54,12 @@ codename = `udroid`
 
 | Distribution  | XFCE4 | MATE | GNOME | RAW |
 |:-------------- |:------:|:------:|:-:|:-----:|
+| [Ubuntu Lunar (23.04)](https://udroid-rc.gitbook.io/udroid-wiki/suites/ubuntu-23.04) | - | - | - | ✔ |
 | [Ubuntu Kinetic (22.10)](https://udroid-rc.gitbook.io/udroid-wiki/suites/ubuntu-22.10) | - | - | - | ✔ |
 
 ### End of Life distros
+
+> No longer supported
 
 | Distribution  | XFCE4 | MATE | RAW |
 |-------------- |------|------|-----|
@@ -50,13 +72,6 @@ codename = `udroid`
 
 Just before starting the installation, you can check [this.](md/desclaimer.md)
 
-## Installation
-
-```bash
-. <(curl -Ls https://raw.githubusercontent.com/RandomCoderOrg/ubuntu-on-android/maintainence/install.sh)
-```
-
-for more see [here.](md/installation.md)
 
 ## Some Screenshots
 
