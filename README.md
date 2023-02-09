@@ -97,6 +97,8 @@ Just before starting the installation, you can check [this.](md/desclaimer.md)
 ## Licence
 
 MIT
-Copyright (c) 2021 Saicharan Kandukuri
+Copyright © 2023 RandomCoderOrg
+
+udroid logo "chad the penguin" designed by [Сэмми](https://github.com/b1tchysam)
 
 ###### feel free to contribute to this repo🤍
