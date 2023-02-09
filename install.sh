@@ -20,7 +20,7 @@ RST="\e[0m"
 ## current best distro
 CUR_BEST_DISTRO="jammy:xfce4"
 FSMGR_REPO="https://github.com/RandomCoderOrg/fs-manager-udroid.git"
-FSMGR_BRANCH="revamp-v2.5"
+FSMGR_BRANCH="main"
 
 die()    { echo -e "${_c_red}[E] ${*}${RST}";if [ -n "$DISABLE_EXIT" ];then exit 1; fi;:;}
 warn()   { echo -e "${_c_red}[W] ${*}${RST}";:;}
