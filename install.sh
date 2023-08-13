@@ -71,7 +71,7 @@ msg "CPU architecture is OK."
 # pv:           for showing progress while downloading/extracting filesystems
 # pulseaudio:   for audio support
 lshout "Checking for required packages.."
-DEPENDS="git jq wget proot pv pulseaudio"
+DEPENDS="git jq wget proot pv pulseaudio openssl"
 TOINSTALL=""
 
 for DEPEND in $DEPENDS; do
