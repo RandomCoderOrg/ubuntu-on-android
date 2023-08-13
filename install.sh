@@ -21,6 +21,7 @@ RST="\e[0m"
 CUR_BEST_DISTRO="jammy:xfce4"
 FSMGR_REPO="https://github.com/RandomCoderOrg/fs-manager-udroid.git"
 FSMGR_BRANCH="main"
+install_count="$(curl https://udroid-download-counter-api.vercel.app/count)"
 
 die()    { echo -e "${_c_red}[E] ${*}${RST}";if [ -n "$DISABLE_EXIT" ];then exit 1; fi;:;}
 warn()   { echo -e "${_c_red}[W] ${*}${RST}";:;}
@@ -48,6 +49,7 @@ function logo() {
     else
         # Just in case the logo is too big for your terminal ( Happens to new termux users )
         lshout "${_c_magneta}UDROID INSTALLER v$version\e[0m...."
+        lshout "${_c_magneta}${install_count} installs so far\e[0m...."
         lshout "\e[90m© RandomCoderOrg"
     fi
 }
