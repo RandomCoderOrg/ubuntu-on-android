@@ -13,6 +13,12 @@
 <img src="https://www.codefactor.io/repository/github/randomcoderorg/ubuntu-on-android/badge">
 </p>
 
+<div align="center">
+
+![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fudroid-download-counter-api.vercel.app%2Fcur_count&query=%24.downloads&style=flat-square&label=Installs%20since%20Aug%202023)
+
+</div>
+
 <p href="https://visitorbadge.io/status?path=https%3A%2F%2Fgithub.com%2FRandomCoderOrg%2Fubuntu-on-android" align=center><img src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2FRandomCoderOrg%2Fubuntu-on-android&label=%F0%9F%A5%B3VISITORS&labelColor=%23ffff00&countColor=%23263759" /><p>
 
 <!-- ![Banner Image](assets/banner.jpg "A Image on Ubuntu-on-android running mate desktop on smartphone") -->
