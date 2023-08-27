@@ -42,9 +42,18 @@ Before you install, please read the [wiki](https://udroid-rc.gitbook.io/) and [d
 . <(curl -Ls https://bit.ly/udroid-installer)
 ```
 
-### or
+**for fresh termux installation**
 
 ```bash
+apt update && apt upgrade -y
+. <(curl -Ls https://bit.ly/udroid-installer)
+```
+
+**To install just the `udroid` tool**
+
+```bash
+apt update && apt upgrade -y
+apt install git -y
 git clone https://github.com/RandomCoderOrg/fs-manager-udroid
 cd fs-manager-udroid
 bash install.sh
