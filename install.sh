@@ -17,6 +17,8 @@ _c_red="\e[1;49;91m"
 _c_blue="\e[1;49;94m"
 RST="\e[0m"
 
+trap 'echo -e "either CTRC+C or HUP INT TERM signals caught\nexiting.."; exit 1' HUP INT TERM
+
 ## current best distro
 CUR_BEST_DISTRO="jammy:xfce4"
 FSMGR_REPO="https://github.com/RandomCoderOrg/fs-manager-udroid.git"
