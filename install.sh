@@ -121,22 +121,21 @@ if [[ $noi == "q" ]]; then
     echo "q read: stopping $CUR_BEST_DISTRO installation.."
     echo "you can still install with: udroid l $CUR_BEST_DISTRO"
     echo
-    exit 0
+else
+    udroid install $CUR_BEST_DISTRO || {
+        die "Failed to install $CUR_BEST_DISTRO"
+    }
+
+    ## show some info
+    lshout "Installation completed successfully."
+    lshout
+    lshout "To login $CUR_BEST_DISTRO, run \"${_c_green}udroid login $CUR_BEST_DISTRO\""
+    lshout "use ${_c_magneta}vncserver :1${RST} to start vnc server"
+    lshout "default password for everything is ${_c_magneta}secret${RST}"
+    lshout "Show us some love by starring our repo on github and donating"
+    msg
+    msg "ubuntu-on-android: ${_c_magneta_line}https://github.com/RandomCoderOrg/ubuntu-on-android${RST}"
+    msg "support us:        ${_c_magneta_line}https://github.com/sponsors/RandomCoderOrg${RST}"
+    msg "Join our discord:  ${_c_magneta_line}https://discord.gg/AGqQCHuE6S${RST}"
+    msg
 fi
-
-udroid install $CUR_BEST_DISTRO || {
-    die "Failed to install $CUR_BEST_DISTRO"
-}
-
-## show some info
-lshout "Installation completed successfully."
-lshout
-lshout "To login $CUR_BEST_DISTRO, run \"${_c_green}udroid login $CUR_BEST_DISTRO\""
-lshout "use ${_c_magneta}vncserver :1${RST} to start vnc server"
-lshout "default password for everything is ${_c_magneta}secret${RST}"
-lshout "Show us some love by starring our repo on github and donating"
-msg
-msg "ubuntu-on-android: ${_c_magneta_line}https://github.com/RandomCoderOrg/ubuntu-on-android${RST}"
-msg "support us:        ${_c_magneta_line}https://github.com/sponsors/RandomCoderOrg${RST}"
-msg "Join our discord:  ${_c_magneta_line}https://discord.gg/AGqQCHuE6S${RST}"
-msg
