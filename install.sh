@@ -114,7 +114,11 @@ bash install.sh || {
 
 ## finally install a good stable distro
 lshout "Installing $CUR_BEST_DISTRO in 3 seconds.."
-sleep 3
+lshot "press q or CTRL+C to stop here.."
+read -r -n 1 -t 3 noi
+if [[ $noi == "q" ]]; then
+
+
 udroid install $CUR_BEST_DISTRO || {
     die "Failed to install $CUR_BEST_DISTRO"
 }
