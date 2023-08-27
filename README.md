@@ -74,6 +74,7 @@ For advanced usage, check [this.](https://github.com/RandomCoderOrg/fs-manager-u
 
 | Distribution  | XFCE4 | MATE | GNOME | RAW |
 |:-------------- |:------:|:------:|:-:|:-----:|
+| [Ubuntu Mantic (23.10)](https://udroid-rc.gitbook.io/udroid-wiki/suites/ubuntu-23.04) | - | - | - | ✔ |
 | [Ubuntu Lunar (23.04)](https://udroid-rc.gitbook.io/udroid-wiki/suites/ubuntu-23.04) | - | - | - | ✔ |
 | [Ubuntu Kinetic (22.10)](https://udroid-rc.gitbook.io/udroid-wiki/suites/ubuntu-22.10) | - | - | - | ✔ |
 
