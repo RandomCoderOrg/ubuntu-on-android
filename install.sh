@@ -48,11 +48,11 @@ function logo() {
         banner_msg "░╚═════╝░╚═════╝░╚═╝░░╚═╝░╚════╝░╚═╝╚═════╝░"
         echo
         banner_msg "████████████ (c)RandomCoderOrg ████████████"
-        lshout "\e[5m█\e0m${_c_magneta}${install_count} installs so far\e[5m█\e0m...."
+        lshout "\e[5m█\e[0m ${_c_magneta}${install_count} installs so far \e[5m█\e[0m...."
     else
         # Just in case the logo is too big for your terminal ( Happens to new termux users )
         lshout "${_c_magneta}UDROID INSTALLER v$version\e[0m...."
-        lshout "\e[5m█\e0m${_c_magneta}${install_count} installs so far\e[5m█\e0m...."
+        lshout "\e[5m█\e[0m ${_c_magneta}${install_count} installs so far \e[5m█\e[0m...."
         lshout "\e[90m© RandomCoderOrg"
     fi
     sleep 1
