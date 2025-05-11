@@ -70,11 +70,13 @@ For advanced usage, check [this.](https://github.com/RandomCoderOrg/fs-manager-u
 |:-------------- |:------:|:------:|:-:|:-----:|
 | [Ubuntu Noble (24.04) LTS](https://docs.udroid.org/suites/ubuntu-24.04-lts) | - | - | - | ✔ |
 | [Ubuntu Jammy (22.04) LTS](https://docs.udroid.org/suites/ubuntu-22.04-lts) | ✔ | ✔ | ✔ | ✔ |
+| [Ubuntu focal (20.04) LTS](https://docs.udroid.org/suites/ubuntu-20.04-lts) |  ✔ |   -  |  -  |  ✔ |
 
 > ### Non-LTS Release
 
 | Distribution  | XFCE4 | MATE | GNOME | RAW |
 |:-------------- |:------:|:------:|:-:|:-----:|
+| [Ubuntu Plucky (25.04)](https://docs.udroid.org/suites/ubuntu-25.04) | - | - | - | ✔ |
 | [Ubuntu Oracular (24.10)](https://docs.udroid.org/suites/ubuntu-24.10) | - | - | - | ✔ |
 
 > ### End of Life distros
@@ -86,7 +88,6 @@ For advanced usage, check [this.](https://github.com/RandomCoderOrg/fs-manager-u
 | [Ubuntu Kinetic (22.10)](https://udroid-rc.gitbook.io/udroid-wiki/suites/ubuntu-22.10) |  X |   X |  ✔ |
 | [Ubuntu Impish (21.10)](https://udroid-rc.gitbook.io/udroid-wiki/suites/ubuntu-21.10)  |  ✔ |   ✔ |  ✔ |
 | [Ubuntu hirsute (21.04)](https://udroid-rc.gitbook.io/udroid-wiki/suites/ubuntu-21.04) |  ✔ |   X  |  ✔ |
-| [Ubuntu focal (20.04)](https://udroid-rc.gitbook.io/udroid-wiki/suites/ubuntu-20.04)   |  ✔ |   X  |  ✔ |
 
 ## Showcase
 
