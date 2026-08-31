@@ -61,6 +61,7 @@ udroid install jammy:xfce4
 ```
 
 For advanced usage, check [this.](https://github.com/RandomCoderOrg/fs-manager-udroid/blob/main/README.md)
+More detailed guide with multilingual support is [Here](https://github.com/focusedpakistani/Ubuntu)
 
 
 ## Status
